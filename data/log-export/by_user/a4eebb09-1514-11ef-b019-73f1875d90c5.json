@@ -1,0 +1,1342 @@
+[
+    {
+        "timestamp": "2024-05-18 14:16:55.754",
+        "current_location": {
+            "lat": 49.0183593,
+            "lon": 12.0996268,
+            "timestamp": 1716041814987
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "OVER"
+    },
+    {
+        "timestamp": "2024-05-18 14:16:51.116",
+        "current_location": {
+            "lat": 49.0182896,
+            "lon": 12.0996233,
+            "timestamp": 1716041809775
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "OVER"
+    },
+    {
+        "timestamp": "2024-05-18 14:16:44.734",
+        "current_location": {
+            "lat": 49.018251,
+            "lon": 12.0996217,
+            "timestamp": 1716041804048
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:16:40.556",
+        "current_location": {
+            "lat": 49.0182045,
+            "lon": 12.0996185,
+            "timestamp": 1716041799756
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:16:35.803",
+        "current_location": {
+            "lat": 49.0181434,
+            "lon": 12.0996153,
+            "timestamp": 1716041795019
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:16:30.563",
+        "current_location": {
+            "lat": 49.0180701,
+            "lon": 12.0996119,
+            "timestamp": 1716041789714
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:16:25.716",
+        "current_location": {
+            "lat": 49.0180102,
+            "lon": 12.0996104,
+            "timestamp": 1716041785007
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:16:21.407",
+        "current_location": {
+            "lat": 49.0179385,
+            "lon": 12.0996013,
+            "timestamp": 1716041780108
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:16:16.552",
+        "current_location": {
+            "lat": 49.0179268,
+            "lon": 12.0995634,
+            "timestamp": 1716041776105
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:16:11.936",
+        "current_location": {
+            "lat": 49.0179218,
+            "lon": 12.099454,
+            "timestamp": 1716041771113
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:16:05.917",
+        "current_location": {
+            "lat": 49.0179155,
+            "lon": 12.0993099,
+            "timestamp": 1716041764923
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:16:01.416",
+        "current_location": {
+            "lat": 49.0179114,
+            "lon": 12.0992106,
+            "timestamp": 1716041760104
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:15:56.336",
+        "current_location": {
+            "lat": 49.0179168,
+            "lon": 12.0990877,
+            "timestamp": 1716041755095
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:15:51.761",
+        "current_location": {
+            "lat": 49.0179394,
+            "lon": 12.0990106,
+            "timestamp": 1716041751099
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:15:46.841",
+        "current_location": {
+            "lat": 49.017963,
+            "lon": 12.0989039,
+            "timestamp": 1716041746108
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:15:41.752",
+        "current_location": {
+            "lat": 49.0179956,
+            "lon": 12.0988289,
+            "timestamp": 1716041741106
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:15:37.261",
+        "current_location": {
+            "lat": 49.0180069,
+            "lon": 12.0987183,
+            "timestamp": 1716041734117
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:15:26.872",
+        "current_location": {
+            "lat": 49.018002,
+            "lon": 12.0985617,
+            "timestamp": 1716041726104
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:15:22.612",
+        "current_location": {
+            "lat": 49.0180084,
+            "lon": 12.0984855,
+            "timestamp": 1716041722103
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:15:18.063",
+        "current_location": {
+            "lat": 49.0179739,
+            "lon": 12.0983532,
+            "timestamp": 1716041717098
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:15:12.752",
+        "current_location": {
+            "lat": 49.017853,
+            "lon": 12.0980756,
+            "timestamp": 1716041712396
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:15:08.563",
+        "current_location": {
+            "lat": 49.0178184,
+            "lon": 12.0970611,
+            "timestamp": 1716041707153
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:14:14.621",
+        "current_location": {
+            "lat": 49.0177917,
+            "lon": 12.0970317,
+            "timestamp": 1716041654065
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:14:10.161",
+        "current_location": {
+            "lat": 49.0177917,
+            "lon": 12.0970317,
+            "timestamp": 1716041649058
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:14:04.579",
+        "current_location": {
+            "lat": 49.0177917,
+            "lon": 12.0970317,
+            "timestamp": 1716041644035
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:14:00.643",
+        "current_location": {
+            "lat": 49.0177917,
+            "lon": 12.0970317,
+            "timestamp": 1716041640086
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:13:55.683",
+        "current_location": {
+            "lat": 49.0177917,
+            "lon": 12.0970317,
+            "timestamp": 1716041634039
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:13:50.801",
+        "current_location": {
+            "lat": 49.01779,
+            "lon": 12.09703,
+            "timestamp": 1716041630093
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:13:45.916",
+        "current_location": {
+            "lat": 49.0177761,
+            "lon": 12.0970299,
+            "timestamp": 1716041625083
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:13:41.101",
+        "current_location": {
+            "lat": 49.0177814,
+            "lon": 12.0970118,
+            "timestamp": 1716041620084
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:13:36.221",
+        "current_location": {
+            "lat": 49.0177993,
+            "lon": 12.0969779,
+            "timestamp": 1716041615086
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:13:30.763",
+        "current_location": {
+            "lat": 49.0178516,
+            "lon": 12.096978,
+            "timestamp": 1716041610092
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:13:25.601",
+        "current_location": {
+            "lat": 49.0178652,
+            "lon": 12.0969256,
+            "timestamp": 1716041605092
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:13:21.836",
+        "current_location": {
+            "lat": 49.0178947,
+            "lon": 12.0968612,
+            "timestamp": 1716041601081
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:13:17.501",
+        "current_location": {
+            "lat": 49.0179114,
+            "lon": 12.0967864,
+            "timestamp": 1716041597084
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:13:13.836",
+        "current_location": {
+            "lat": 49.0179417,
+            "lon": 12.0967409,
+            "timestamp": 1716041593089
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:13:08.663",
+        "current_location": {
+            "lat": 49.0179867,
+            "lon": 12.0967237,
+            "timestamp": 1716041588086
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:13:04.023",
+        "current_location": {
+            "lat": 49.0180519,
+            "lon": 12.096753,
+            "timestamp": 1716041583087
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:12:58.824",
+        "current_location": {
+            "lat": 49.0181192,
+            "lon": 12.0967775,
+            "timestamp": 1716041578085
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:12:54.803",
+        "current_location": {
+            "lat": 49.0181508,
+            "lon": 12.0967878,
+            "timestamp": 1716041574077
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:12:49.541",
+        "current_location": {
+            "lat": 49.0181998,
+            "lon": 12.0968046,
+            "timestamp": 1716041569064
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:12:45.041",
+        "current_location": {
+            "lat": 49.0182526,
+            "lon": 12.0968242,
+            "timestamp": 1716041564187
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:12:40.541",
+        "current_location": {
+            "lat": 49.0183165,
+            "lon": 12.0968461,
+            "timestamp": 1716041560083
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:12:36.196",
+        "current_location": {
+            "lat": 49.0183937,
+            "lon": 12.0968735,
+            "timestamp": 1716041555083
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:12:30.602",
+        "current_location": {
+            "lat": 49.018453,
+            "lon": 12.0968936,
+            "timestamp": 1716041550082
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:12:25.821",
+        "current_location": {
+            "lat": 49.0185221,
+            "lon": 12.0969259,
+            "timestamp": 1716041545083
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:12:20.621",
+        "current_location": {
+            "lat": 49.018569,
+            "lon": 12.0969629,
+            "timestamp": 1716041540091
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:12:16.223",
+        "current_location": {
+            "lat": 49.018584,
+            "lon": 12.0969988,
+            "timestamp": 1716041535063
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:12:11.516",
+        "current_location": {
+            "lat": 49.0186145,
+            "lon": 12.097025,
+            "timestamp": 1716041531081
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:12:06.803",
+        "current_location": {
+            "lat": 49.018652,
+            "lon": 12.0970663,
+            "timestamp": 1716041526089
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:12:01.782",
+        "current_location": {
+            "lat": 49.0186573,
+            "lon": 12.0970737,
+            "timestamp": 1716041521078
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:11:56.836",
+        "current_location": {
+            "lat": 49.018708,
+            "lon": 12.0970756,
+            "timestamp": 1716041516069
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:11:51.762",
+        "current_location": {
+            "lat": 49.0187152,
+            "lon": 12.097129,
+            "timestamp": 1716041511073
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:11:47.623",
+        "current_location": {
+            "lat": 49.0187059,
+            "lon": 12.0971513,
+            "timestamp": 1716041507069
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:11:43.532",
+        "current_location": {
+            "lat": 49.0187001,
+            "lon": 12.0971551,
+            "timestamp": 1716041503067
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:11:39.123",
+        "current_location": {
+            "lat": 49.0186849,
+            "lon": 12.0971543,
+            "timestamp": 1716041498066
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:04:36.843",
+        "current_location": {
+            "lat": 49.0188747,
+            "lon": 12.0972896,
+            "timestamp": 1716041076246
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:04:33.343",
+        "current_location": {
+            "lat": 49.018883,
+            "lon": 12.0972343,
+            "timestamp": 1716041072529
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:04:28.723",
+        "current_location": {
+            "lat": 49.0188536,
+            "lon": 12.0972177,
+            "timestamp": 1716041068069
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:04:24.703",
+        "current_location": {
+            "lat": 49.0188397,
+            "lon": 12.0972184,
+            "timestamp": 1716041064081
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:04:20.543",
+        "current_location": {
+            "lat": 49.018809,
+            "lon": 12.0971768,
+            "timestamp": 1716041060069
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:04:16.723",
+        "current_location": {
+            "lat": 49.018825,
+            "lon": 12.09714,
+            "timestamp": 1716041056054
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:04:12.654",
+        "current_location": {
+            "lat": 49.018825,
+            "lon": 12.09714,
+            "timestamp": 1716041052078
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:04:08.636",
+        "current_location": {
+            "lat": 49.018825,
+            "lon": 12.09714,
+            "timestamp": 1716041047090
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:04:03.496",
+        "current_location": {
+            "lat": 49.0188288,
+            "lon": 12.0971385,
+            "timestamp": 1716041042986
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:03:59.603",
+        "current_location": {
+            "lat": 49.0188228,
+            "lon": 12.0971468,
+            "timestamp": 1716041039092
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:03:54.603",
+        "current_location": {
+            "lat": 49.0188137,
+            "lon": 12.0971486,
+            "timestamp": 1716041034091
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:03:50.596",
+        "current_location": {
+            "lat": 49.0187749,
+            "lon": 12.0971529,
+            "timestamp": 1716041030044
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:03:46.655",
+        "current_location": {
+            "lat": 49.0187025,
+            "lon": 12.0971599,
+            "timestamp": 1716041026089
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:03:42.016",
+        "current_location": {
+            "lat": 49.0186855,
+            "lon": 12.0971621,
+            "timestamp": 1716041021096
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:03:36.914",
+        "current_location": {
+            "lat": 49.0186565,
+            "lon": 12.097146,
+            "timestamp": 1716041016090
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:03:32.963",
+        "current_location": {
+            "lat": 49.0186444,
+            "lon": 12.0971075,
+            "timestamp": 1716041012093
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:03:27.674",
+        "current_location": {
+            "lat": 49.0186402,
+            "lon": 12.0970161,
+            "timestamp": 1716041007091
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:03:23.574",
+        "current_location": {
+            "lat": 49.0186544,
+            "lon": 12.0969366,
+            "timestamp": 1716041003025
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:03:19.743",
+        "current_location": {
+            "lat": 49.0186217,
+            "lon": 12.0969293,
+            "timestamp": 1716040999097
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:03:15.536",
+        "current_location": {
+            "lat": 49.0185935,
+            "lon": 12.0969502,
+            "timestamp": 1716040995125
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:03:11.854",
+        "current_location": {
+            "lat": 49.0185883,
+            "lon": 12.0969767,
+            "timestamp": 1716040991090
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:03:07.703",
+        "current_location": {
+            "lat": 49.0185884,
+            "lon": 12.0969761,
+            "timestamp": 1716040987088
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:03:03.234",
+        "current_location": {
+            "lat": 49.0186065,
+            "lon": 12.0969735,
+            "timestamp": 1716040982085
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:02:58.502",
+        "current_location": {
+            "lat": 49.0185967,
+            "lon": 12.0969817,
+            "timestamp": 1716040978094
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:02:54.714",
+        "current_location": {
+            "lat": 49.0185967,
+            "lon": 12.0969817,
+            "timestamp": 1716040974085
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:02:50.614",
+        "current_location": {
+            "lat": 49.0185964,
+            "lon": 12.0969814,
+            "timestamp": 1716040970092
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:02:46.754",
+        "current_location": {
+            "lat": 49.018545,
+            "lon": 12.0968417,
+            "timestamp": 1716040965094
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:02:41.642",
+        "current_location": {
+            "lat": 49.018545,
+            "lon": 12.0968417,
+            "timestamp": 1716040961088
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:02:36.915",
+        "current_location": {
+            "lat": 49.018545,
+            "lon": 12.0968417,
+            "timestamp": 1716040956099
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:02:31.876",
+        "current_location": {
+            "lat": 49.0185445,
+            "lon": 12.0968403,
+            "timestamp": 1716040951094
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:02:27.342",
+        "current_location": {
+            "lat": 49.018538,
+            "lon": 12.0968305,
+            "timestamp": 1716040946607
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:02:23.063",
+        "current_location": {
+            "lat": 49.0185337,
+            "lon": 12.0968245,
+            "timestamp": 1716040942623
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:02:18.838",
+        "current_location": {
+            "lat": 49.0185344,
+            "lon": 12.0968188,
+            "timestamp": 1716040938079
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:02:14.618",
+        "current_location": {
+            "lat": 49.0185336,
+            "lon": 12.0968147,
+            "timestamp": 1716040934089
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:02:10.656",
+        "current_location": {
+            "lat": 49.018523,
+            "lon": 12.0967756,
+            "timestamp": 1716040930055
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:02:06.565",
+        "current_location": {
+            "lat": 49.0185202,
+            "lon": 12.096746,
+            "timestamp": 1716040926085
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:02:02.794",
+        "current_location": {
+            "lat": 49.0185859,
+            "lon": 12.0967038,
+            "timestamp": 1716040922026
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:01:58.096",
+        "current_location": {
+            "lat": 49.0184109,
+            "lon": 12.0972345,
+            "timestamp": 1716040917530
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:01:53.235",
+        "current_location": {
+            "lat": 49.018518,
+            "lon": 12.0971484,
+            "timestamp": 1716040912501
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:01:47.437",
+        "current_location": {
+            "lat": 49.0185824,
+            "lon": 12.0970575,
+            "timestamp": 1716040906760
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:01:43.014",
+        "current_location": {
+            "lat": 49.0185772,
+            "lon": 12.0970498,
+            "timestamp": 1716040902474
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:01:38.337",
+        "current_location": {
+            "lat": 49.0185772,
+            "lon": 12.0970475,
+            "timestamp": 1716040897425
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:01:33.055",
+        "current_location": {
+            "lat": 49.0186067,
+            "lon": 12.0970185,
+            "timestamp": 1716040892193
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:01:28.675",
+        "current_location": {
+            "lat": 49.018644,
+            "lon": 12.0970334,
+            "timestamp": 1716040888071
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:01:24.595",
+        "current_location": {
+            "lat": 49.0186498,
+            "lon": 12.0970367,
+            "timestamp": 1716040884067
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:01:19.815",
+        "current_location": {
+            "lat": 49.0186245,
+            "lon": 12.0970504,
+            "timestamp": 1716040879092
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:01:15.642",
+        "current_location": {
+            "lat": 49.0186658,
+            "lon": 12.0970461,
+            "timestamp": 1716040875087
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:01:11.062",
+        "current_location": {
+            "lat": 49.0186792,
+            "lon": 12.0968523,
+            "timestamp": 1716040863951
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:00:59.763",
+        "current_location": {
+            "lat": 49.018639,
+            "lon": 12.0966099,
+            "timestamp": 1716040859077
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:00:55.355",
+        "current_location": {
+            "lat": 49.018607,
+            "lon": 12.0965,
+            "timestamp": 1716040854755
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:00:51.216",
+        "current_location": {
+            "lat": 49.0185615,
+            "lon": 12.0964602,
+            "timestamp": 1716040850535
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:00:47.118",
+        "current_location": {
+            "lat": 49.0185253,
+            "lon": 12.0964952,
+            "timestamp": 1716040846683
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:00:42.875",
+        "current_location": {
+            "lat": 49.0185094,
+            "lon": 12.0964965,
+            "timestamp": 1716040842091
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:00:38.456",
+        "current_location": {
+            "lat": 49.0184787,
+            "lon": 12.0964987,
+            "timestamp": 1716040838074
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:00:34.697",
+        "current_location": {
+            "lat": 49.0184329,
+            "lon": 12.0965635,
+            "timestamp": 1716040833963
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:00:30.136",
+        "current_location": {
+            "lat": 49.018422,
+            "lon": 12.096664,
+            "timestamp": 1716040829387
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:00:25.662",
+        "current_location": {
+            "lat": 49.0184293,
+            "lon": 12.0967645,
+            "timestamp": 1716040824943
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:00:21.722",
+        "current_location": {
+            "lat": 49.0184043,
+            "lon": 12.0967764,
+            "timestamp": 1716040821084
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:00:17.115",
+        "current_location": {
+            "lat": 49.018365,
+            "lon": 12.0967797,
+            "timestamp": 1716040816091
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:00:12.022",
+        "current_location": {
+            "lat": 49.0183738,
+            "lon": 12.0968163,
+            "timestamp": 1716040811473
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 14:00:07.903",
+        "current_location": {
+            "lat": 49.0183498,
+            "lon": 12.0967925,
+            "timestamp": 1716040807093
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:59:57.735",
+        "current_location": {
+            "lat": 49.018225,
+            "lon": 12.0967578,
+            "timestamp": 1716040797093
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:59:53.795",
+        "current_location": {
+            "lat": 49.0182181,
+            "lon": 12.0967787,
+            "timestamp": 1716040793092
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:59:49.595",
+        "current_location": {
+            "lat": 49.0182262,
+            "lon": 12.0968053,
+            "timestamp": 1716040789088
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:59:45.856",
+        "current_location": {
+            "lat": 49.01822,
+            "lon": 12.0968161,
+            "timestamp": 1716040785092
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:59:41.502",
+        "current_location": {
+            "lat": 49.0182078,
+            "lon": 12.0968261,
+            "timestamp": 1716040781093
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:59:37.282",
+        "current_location": {
+            "lat": 49.018144,
+            "lon": 12.0968162,
+            "timestamp": 1716040776520
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:59:32.855",
+        "current_location": {
+            "lat": 49.0180574,
+            "lon": 12.0968973,
+            "timestamp": 1716040772451
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:59:28.915",
+        "current_location": {
+            "lat": 49.0180429,
+            "lon": 12.0971297,
+            "timestamp": 1716040768327
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:59:24.982",
+        "current_location": {
+            "lat": 49.0179398,
+            "lon": 12.0972562,
+            "timestamp": 1716040764433
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:59:20.522",
+        "current_location": {
+            "lat": 49.0178773,
+            "lon": 12.0973322,
+            "timestamp": 1716040759926
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:59:16.555",
+        "current_location": {
+            "lat": 49.0177776,
+            "lon": 12.0973319,
+            "timestamp": 1716040756085
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:59:12.835",
+        "current_location": {
+            "lat": 49.0177413,
+            "lon": 12.0973564,
+            "timestamp": 1716040752073
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:59:08.782",
+        "current_location": {
+            "lat": 49.0177411,
+            "lon": 12.0973569,
+            "timestamp": 1716040748088
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:59:03.802",
+        "current_location": {
+            "lat": 49.0177564,
+            "lon": 12.0973738,
+            "timestamp": 1716040743096
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:58:58.835",
+        "current_location": {
+            "lat": 49.0177383,
+            "lon": 12.0973983,
+            "timestamp": 1716040738093
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:58:53.902",
+        "current_location": {
+            "lat": 49.0177383,
+            "lon": 12.0973983,
+            "timestamp": 1716040733092
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    },
+    {
+        "timestamp": "2024-05-18 13:58:49.736",
+        "current_location": {
+            "lat": 49.0177383,
+            "lon": 12.0973982,
+            "timestamp": 1716040729089
+        },
+        "active_user": "a4eebb09-1514-11ef-b019-73f1875d90c5",
+        "game_state": "RUNNING"
+    }
+]
