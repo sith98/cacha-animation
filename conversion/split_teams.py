@@ -1,6 +1,6 @@
 import json
 
-with open("data/log-export/regular_status_update_last_part.json") as file:
+with open("data/log-export/regular_status_update.json") as file:
     data = json.load(file)
 
 by_user = {}
