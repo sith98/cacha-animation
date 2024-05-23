@@ -9,7 +9,7 @@ json_dir = "data/log-by-user"
 
 def main():
     gpx = gpxpy.gpx.GPX()
-    gpx.name = combined
+    gpx.name = "combined"
     for file_name in os.listdir(json_dir):
         full_name = os.path.join(json_dir, file_name)
         user_id = os.path.splitext(file_name)[0]
