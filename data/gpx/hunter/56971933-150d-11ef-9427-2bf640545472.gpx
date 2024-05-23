@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
+  <metadata>
+    <name>hunter_56971933-150d-11ef-9427-2bf640545472</name>
+  </metadata>
+  <trk>
+    <trkseg>
+      <trkpt lat="49.0181376" lon="12.0961936">
+        <time>2024-05-18T14:16:02.861000Z</time>
+      </trkpt>
+      <trkpt lat="49.0181418" lon="12.0961902">
+        <time>2024-05-18T14:16:07.845000Z</time>
+      </trkpt>
+      <trkpt lat="49.018143" lon="12.0961906">
+        <time>2024-05-18T14:16:12.841000Z</time>
+      </trkpt>
+      <trkpt lat="49.0181318" lon="12.0961828">
+        <time>2024-05-18T14:16:17.198000Z</time>
+      </trkpt>
+      <trkpt lat="49.018121" lon="12.0962359">
+        <time>2024-05-18T14:16:21.448000Z</time>
+      </trkpt>
+      <trkpt lat="49.0181101" lon="12.0963586">
+        <time>2024-05-18T14:16:25.903000Z</time>
+      </trkpt>
+      <trkpt lat="49.0181023" lon="12.0965299">
+        <time>2024-05-18T14:16:30.568000Z</time>
+      </trkpt>
+      <trkpt lat="49.0181293" lon="12.0965905">
+        <time>2024-05-18T14:16:34.871000Z</time>
+      </trkpt>
+      <trkpt lat="49.0181719" lon="12.0966049">
+        <time>2024-05-18T14:16:38.924000Z</time>
+      </trkpt>
+      <trkpt lat="49.018209" lon="12.0966458">
+        <time>2024-05-18T14:16:42.876000Z</time>
+      </trkpt>
+      <trkpt lat="49.0182477" lon="12.0966766">
+        <time>2024-05-18T14:16:46.875000Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
