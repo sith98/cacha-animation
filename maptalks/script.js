@@ -49,7 +49,7 @@ const getLocationByTime = (locations, time) => {
 }
 
 const getCatchTimeStamp = (isoTime) => {
-    return new Date(isoTime).getTime() + 7200000;
+    return new Date(isoTime + "Z").getTime();
 }
 
 const getCatchTimes = (teamCaught, minTime) => {
