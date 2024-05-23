@@ -3,3 +3,4 @@ nbformat
 matplotlib
 pandas
 plotly
+gpxpy
