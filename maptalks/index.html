@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geometry Styles - Symbol by geometry properties</title>
+<style type="text/css">
+    html,
+    body {
+        margin: 0px;
+        height: 100%;
+        width: 100%
+    }
+
+    .container {
+        width: 100%;
+        height: 90%;
+    }
+
+    input[type=range] {
+        width: 90%;
+    }
+</style>
+<link rel="stylesheet" href="https://unpkg.com/maptalks/dist/maptalks.css">
+<script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
+
+<body>
+
+    <div id="map" class="container"></div>
+    <div class="controls">
+        <input type="range" min="1" max="100" value="50" class="slider" id="time">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
