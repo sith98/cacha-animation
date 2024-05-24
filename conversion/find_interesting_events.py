@@ -57,9 +57,9 @@ for t in df.index:
     
     # end of interesting period
     if interesting and not still_interesting:
-        interesting_timestamps.append((interesting_start, t))
+        interesting_timestamps.append({'start': interesting_start, 'end': t})
         interesting = False
-interesting_timestamps.append((interesting_start, t))
+interesting_timestamps.append({'start': interesting_start, 'end': t})
 print("Interesting timestamps:")
 print(interesting_timestamps)
 
@@ -69,10 +69,10 @@ print("Game running interval:")
 running_interval
 
 # filter game running interval
-interesting_timestamps = [ts for ts in interesting_timestamps if ts[0] > running_interval['start'] and ts[1] < running_interval['end']]
+interesting_timestamps = [ts for ts in interesting_timestamps if ts['start'] > running_interval['start'] and ts['end'] < running_interval['end']]
 print("Filtered interesting timestamps:")
 print(interesting_timestamps)
 
 # write interesting timestamps to json
 with open(os.path.join('data', GAME, "interesting_timestamps.json"), "w") as f:
-    json.dump(interesting_timestamps, f)
+    json.dump(interesting_timestamps, f, indent=4)
