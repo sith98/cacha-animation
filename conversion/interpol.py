@@ -74,6 +74,37 @@ def pandaify_data(time, data):
     #print(df.head())
     return df
 
+def find_connection_status(time_equi, teams, inactive_after_in_milliseconds=30_000):
+    # assume time contains equidistant points
+    time_step = time_equi[1] - time_equi[0]
+    print("time step", time_step)
+    num_points = inactive_after_in_milliseconds // time_step
+    print("num points", num_points)
+    #print(df.shape)
+    #rows = len(df.index)
+    #cols = len(df.columns) // 2
+    #print(rows, cols)
+    #np.full((rows, cols), False)
+    #columns = pd.MultiIndex.from_product([data.keys(), ["lat", "lon"]], names=["team", "dim"])
+    df = pd.DataFrame(np.full([len(time_equi), len(teams.keys())], False), index=time_equi, columns=teams.keys())
+    for team_name, entry in teams.items():
+        time_raw = entry["timestamp"]
+        #print(time_raw[:10])
+        #print(team_name, len(time_raw))
+        active_connection = np.full(len(time_equi), True)
+
+        current_raw_index = 0
+        for i, t in enumerate(time_equi):
+            while current_raw_index+1 < len(time_raw) and time_raw[current_raw_index+1] < t:
+                current_raw_index += 1
+            assert time_raw[current_raw_index] <= t
+            if t - time_raw[current_raw_index] > inactive_after_in_milliseconds:
+                active_connection[i] = False
+        plt.plot(time_equi, active_connection)
+        plt.show()
+        df[team_name] = active_connection
+    #print(df.head)
+
 
 teams = numpyify_data()
 nice_time, nice_data = clamp_data(teams)
@@ -86,6 +117,8 @@ df = pandaify_data(nice_time, nice_data)
 #df2 = pd.read_csv("data/log-interpol/interpol.csv")
 
 df.to_parquet("data/log-interpol/interpol.parquet")
+
+find_connection_status(nice_time, teams)
 
 # How to read the data:
 
