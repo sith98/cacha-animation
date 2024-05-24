@@ -6,16 +6,18 @@ import os
 import json
 from pathlib import Path
 
-def main(time_step_ms):
+def main(time_step_ms, inactive_after_ms):
     for game_name in os.listdir("data/"):
         teams = dict()
         for team_json in os.listdir(f"data/{game_name}/log-by-user/"):
             team_name = team_json.rstrip(".json")
             team_dataframe = json_to_dataframe(f"data/{game_name}/log-by-user/{team_json}")
             teams[team_name] = team_dataframe
-        df = consolidate_data(teams, time_step_ms)
+        interpol_dataframe = consolidate_data(teams, time_step_ms)
         Path(f"data/{game_name}/log-interpol").mkdir(parents=True, exist_ok=True)
-        df.to_parquet(f"data/{game_name}/log-interpol/interpol.parquet")
+        interpol_dataframe.to_parquet(f"data/{game_name}/log-interpol/interpol.parquet")
+        connection_dataframe = connection_status(interpol_dataframe.index, teams, inactive_after_ms)
+        connection_dataframe.to_parquet(f"data/{game_name}/log-interpol/connection.parquet")
 
 def json_to_dataframe(path):
     with open(path) as file:
@@ -30,8 +32,8 @@ def json_to_dataframe(path):
         lon.append(c["lon"])
         timestamp.append(c["timestamp"])
     coords = np.array([lat, lon]).T
-    df = pd.DataFrame(coords, index=timestamp, columns=["lat", "lon"])
-    return df
+    team_dataframe = pd.DataFrame(coords, index=timestamp, columns=["lat", "lon"])
+    return team_dataframe
 
 def consolidate_data(teams, time_step_ms):
     min_times = [np.min(team_dataframe.index) for team_dataframe in teams.values()]
@@ -44,13 +46,33 @@ def consolidate_data(teams, time_step_ms):
     # of interest to lie near zero
     time_equi = np.arange(0, max_time - min_time, time_step_ms)
     columns = pd.MultiIndex.from_product([teams.keys(), ["lat", "lon"]], names=["team_name", "dim"])
-    df = pd.DataFrame(index=time_equi+min_time, columns=columns)
+    interpol_dataframe = pd.DataFrame(index=time_equi+min_time, columns=columns)
     for team_name, team_dataframe in teams.items():
         spline_lat = PchipInterpolator(team_dataframe.index - min_time, team_dataframe["lat"])
         spline_lon = PchipInterpolator(team_dataframe.index - min_time, team_dataframe["lon"])
-        df[team_name, "lat"] = spline_lat(time_equi)
-        df[team_name, "lon"] = spline_lon(time_equi)
-    return df
+        interpol_dataframe[team_name, "lat"] = spline_lat(time_equi)
+        interpol_dataframe[team_name, "lon"] = spline_lon(time_equi)
+    return interpol_dataframe
+
+def connection_status(time_equi, teams, inactive_after_ms):
+    # assume time contains equidistant points
+    time_step = time_equi[1] - time_equi[0]
+    num_points = inactive_after_ms // time_step
+    connection_dataframe = pd.DataFrame(index=time_equi, columns=teams.keys())
+    for team_name, team_dataframe in teams.items():
+        time_raw = team_dataframe.index
+        active_connection = np.full(len(time_equi), True)
+        current_raw_index = 0
+        for i, t in enumerate(time_equi):
+            while current_raw_index+1 < len(time_raw) and time_raw[current_raw_index+1] < t:
+                current_raw_index += 1
+            assert time_raw[current_raw_index] <= t
+            if t - time_raw[current_raw_index] > inactive_after_ms:
+                active_connection[i] = False
+        #plt.plot(time_equi, active_connection)
+        #plt.show()
+        connection_dataframe[team_name] = active_connection
+    return connection_dataframe
 
 if __name__ == "__main__":
-    main(time_step_ms=1000)
+    main(time_step_ms=1000, inactive_after_ms=30_000)
