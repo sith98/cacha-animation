@@ -1,5 +1,6 @@
 ipykernel
 nbformat
+numpy
 matplotlib
 pandas
 plotly
@@ -7,3 +8,4 @@ gpxpy
 imageio
 imageio[ffmpeg]
 kaleido
+scipy
