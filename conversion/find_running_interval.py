@@ -18,7 +18,7 @@ for entry in reversed(data): # log has newest entries at the top
     if not found_running and entry['game_state'] == 'RUNNING':
         found_running = True
         running_interval['start'] = entry['timestamp']
-    if found_running and entry['game_state'] != 'OVER':
+    if found_running and entry['game_state'] == 'OVER':
         running_interval['end'] = entry['timestamp']
         break
 
