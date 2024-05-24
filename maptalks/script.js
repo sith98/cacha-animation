@@ -123,29 +123,33 @@ const main = async () => {
         })
     });
 
-    const layer = new maptalks.VectorLayer('v').addTo(map);
+    const tailLayer = new maptalks.VectorLayer("t").addTo(map);
+    const layer = new maptalks.VectorLayer("v").addTo(map);
 
     const c = map.getCenter();
 
-    const makeSymbol = color => [
+    const makeSymbol = (color, size = 20) => [
         {
             markerType: "ellipse",
             markerFill: color,
             markerLineWidth: 0,
             markerLineOpacity: 1,
-            markerWidth: 20,
-            markerHeight: 20,
+            markerWidth: size,
+            markerHeight: size,
         },
         {
             textFaceName: "sans-serif",
             textName: "{name}",
             textSize: 14,
-            textDy: 24
-        }
+            textDy: 24,
+        },
     ]
-    const symbolChaser = makeSymbol("rgb(216,115,149)");
-    const symbolRunner = makeSymbol("lightgreen");
-    const symbolGrey = makeSymbol("grey");
+
+    const colorChaser = "rgb(216,115,149)";
+    const colorRunner = "lightgreen";
+    const colorGrey = "grey";
+    const symbolGrey = makeSymbol(colorGrey);
+    const symbolTail = makeSymbol(colorGrey, 5);
 
     const markers = {};
 
@@ -166,20 +170,41 @@ const main = async () => {
     }
 
 
+    const tailDuration = 5 * 60 * 1000;
+    const tailStepSize = 5 * 1000;
+    const nTail = Math.floor(tailDuration / tailStepSize);
+
+    const tailMarkers = {}
+    for (const user of Object.keys(locations)) {
+        tailMarkers[user] = []
+        for (let i = 0; i < nTail; i++) {
+            const marker = new maptalks.Marker(c.add(i * 0.0002, 0), { symbol: symbolTail }).addTo(tailLayer);
+
+            marker.updateSymbol([{ markerFillOpacity: 1 - (i + 1) / nTail }, {}])
+            tailMarkers[user].push(marker);
+        }
+    }
+
     const updateMarker = (marker, userId, time) => {
         const location = getLocationByTime(locations[userId], time);
         marker.setCoordinates(new maptalks.Coordinate(location.lon, location.lat));
         const isChaser = userId in catchTimes && time >= catchTimes[userId];
         const isGrey = location.gameState === "TEAM_CREATION_PHASE" && !isChaser || location.gameState === "OVER" && isChaser;
-        const symbol = isGrey ? symbolGrey :
-            isChaser ? symbolChaser : symbolRunner;
-        marker.setSymbol(symbol);
-        // marker.updateSymbol({ markerFillOpacity: location.gameState == "RUNNING" ? 1 : 0.2 });
+        // const symbol = isGrey ? symbolGrey :
+        //     isChaser ? symbolChaser : symbolRunner;
+        // marker.setSymbol(symbol);
+        const color = isGrey ? colorGrey :
+            isChaser ? colorChaser : colorRunner
+        marker.updateSymbol([{ markerFill: color }, {}]);
     }
 
     const redraw = () => {
         for (const [userId, marker] of Object.entries(markers)) {
             updateMarker(marker, userId, time)
+            const roundedTime = Math.floor(time / tailStepSize) * tailStepSize;
+            for (const [index, tailMarker] of tailMarkers[userId].entries()) {
+                updateMarker(tailMarker, userId, roundedTime - tailStepSize * index);
+            }
         }
     }
     console.log(markers);
