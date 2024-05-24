@@ -14,7 +14,6 @@ df = pd.read_parquet(os.path.join("data", GAME, "log-interpol/interpol.parquet")
 
 # get list of teams
 teams = list(set(c[0] for c in df.columns))
-teams
 
 # get catch data
 data_caught = json.load(open(os.path.join('data/', GAME, "log-export/team_caught.json")))
