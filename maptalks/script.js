@@ -1,5 +1,5 @@
 const loadJson = (dir) => {
-    return Promise.all(["regular_status_update.json", "team_caught.json", "team_names.json"].map(url => `${dir}/${url}`).map(url => {
+    return Promise.all(["regular_status_update", "team_caught", "team_names", "interesting_timestamps"].map(url => `${dir}/${url}.json`).map(url => {
         return fetch(url).then(res => res.json());
     }))
 }
@@ -188,7 +188,7 @@ const downloadBlob = (blob, filename) => {
 
 const run = async (directory) => {
     document.querySelector("#title").innerHTML = directory;
-    const [statusUpdate, teamCaught, teamNames] = await loadJson(directory);
+    const [statusUpdate, teamCaught, teamNames, interestingTimestamps] = await loadJson(directory);
 
     const locations = parseStatusUpdate(statusUpdate)
     const meta = getMeta(locations);
@@ -227,6 +227,23 @@ const run = async (directory) => {
     const tailLayer = new maptalks.VectorLayer("t").addTo(map);
     const layer = new maptalks.VectorLayer("v").addTo(map);
     const pingLayer = new maptalks.VectorLayer("p").addTo(map);
+
+
+    const overlayRect = new maptalks.Rectangle(
+        map.getCenter().add(-5, +5),
+        5000000, 5000000,
+        {
+            symbol: {
+                polygonFill: "red"
+            },
+        }
+    );
+    const overlayLayer = new maptalks.VectorLayer("o", [overlayRect], {
+        opacity: 0.05
+    }).addTo(map);
+
+    overlayLayer.hide();
+
 
     const c = map.getCenter();
     const markerSize = 20;
@@ -280,7 +297,7 @@ const run = async (directory) => {
         }).addTo(pingLayer);
     }
 
-    const playFactor = 120;
+    let speedFactor = 120;
 
     const tailDuration = 5 * 60 * 1000;
     // const tailDuration = 0;
@@ -313,7 +330,7 @@ const run = async (directory) => {
 
     const pingMarkerSize = markerSize * 3;
     const pingMarkerTime = 1000;
-    const scaledPingMarkerTime = pingMarkerTime * playFactor;
+    const scaledPingMarkerTime = pingMarkerTime * speedFactor;
     const updatePingMarker = (marker, userId, time) => {
         const ping = pings.find(ping => ping.time <= time && time <= ping.time + scaledPingMarkerTime);
         if (ping === undefined || !(userId in ping.locations)) {
@@ -325,9 +342,6 @@ const run = async (directory) => {
         const size = markerSize * (1 - factor) + pingMarkerSize * factor;
         marker.updateSymbol([{ markerFillOpacity: 1 - factor, markerWidth: size, markerHeight: size }, {}]);
         const location = ping.locations[userId];
-        if (userId === "b1d91f00-1514-11ef-90d9-870e7bed4f26") {
-            console.log(location);
-        }
         marker.setCoordinates(new maptalks.Coordinate(location.lon, location.lat))
     }
 
@@ -342,6 +356,14 @@ const run = async (directory) => {
                 updateMarker(tailMarker, userId, roundedTime - tailStepSize * index);
             }
         }
+        const slowMo = interestingTimestamps.some(range =>
+            range.start <= time && time <= range.end
+        ) && enableSlowMo;
+        if (slowMo) {
+            overlayLayer.show();
+        } else {
+            overlayLayer.hide();
+        }
     }
 
     let previousTimeStamp = null;
@@ -349,13 +371,18 @@ const run = async (directory) => {
 
     let stopped = false;
 
+    let enableSlowMo = true;
     const frame = timeStamp => {
         if (stopped) {
             return;
         }
         if (previousTimeStamp !== null && !paused) {
+            const slowMo = interestingTimestamps.some(range =>
+                range.start <= time && time <= range.end
+            ) && enableSlowMo;
+            const slowMoFactor = slowMo ? 0.1 : 1;
             const ellapsed = timeStamp - previousTimeStamp;
-            const newTime = time + ellapsed * playFactor;
+            const newTime = time + ellapsed * speedFactor * slowMoFactor;
             time = Math.min(newTime, meta.maxTime);
             timeSlider.value = time;
             if (time === meta.maxTime) {
@@ -399,10 +426,35 @@ const run = async (directory) => {
         }
     }
 
+    const speeds = [60, 120, 240];
+    const speedButton = document.querySelector("#speed");
+    const updateSpeedButton = () => {
+        speedButton.innerHTML = `Speed x${speedFactor}`;
+    }
+    const speedButtonHandler = () => {
+        const index = speeds.indexOf(speedFactor);
+        speedFactor = speeds[(index + 1) % speeds.length];
+        updateSpeedButton();
+    }
+    updateSpeedButton();
+
+    const slowMoButton = document.querySelector("#slowmo")
+    const updateSlowMoButton = () => {
+        slowMoButton.innerHTML = enableSlowMo ? "Slow-Mo on" : "Slow-Mo off"
+    }
+    const slowMoButtonHandler = () => {
+        enableSlowMo = !enableSlowMo;
+        updateSlowMoButton();
+        redraw();
+    }
+    updateSlowMoButton();
+
     playButton.addEventListener("click", clickHandler)
     window.addEventListener("keydown", keyHandler)
     timeSlider.addEventListener("input", sliderHandler);
     recordButton.addEventListener("click", recordButtonHandle);
+    slowMoButton.addEventListener("click", slowMoButtonHandler);
+    speedButton.addEventListener("click", speedButtonHandler);
 
     return () => {
         stopped = true;
@@ -410,6 +462,8 @@ const run = async (directory) => {
         window.removeEventListener("keydown", keyHandler)
         timeSlider.removeEventListener("input", sliderHandler);
         recordButton.removeEventListener("click", recordButtonHandle);
+        slowMoButton.removeEventListener("click", slowMoButtonHandler)
+        speedButton.removeEventListener("click", speedButtonHandler);
         map.off(mapClickHander);
         map.remove();
     }
