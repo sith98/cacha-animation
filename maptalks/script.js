@@ -15,6 +15,7 @@ const parseStatusUpdate = json => {
             lat: entry.current_location.lat,
             lon: entry.current_location.lon,
             time: entry.current_location.timestamp,
+            gameState: entry.game_state,
         })
     }
     for (const array of Object.values(byUser)) {
@@ -43,6 +44,7 @@ const getLocationByTime = (locations, time) => {
         entry = {
             lat: first.lat + factor * (second.lat - first.lat),
             lon: first.lon + factor * (second.lon - first.lon),
+            gameState: first.gameState,
         }
     }
     return entry;
@@ -111,7 +113,7 @@ const main = async () => {
 
     const map = new maptalks.Map('map', {
         center: [meta.centerLon, meta.centerLat],
-        zoom: 14,
+        zoom: 16,
         baseLayer: new maptalks.TileLayer('tile', {
             urlTemplate: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
             subdomains: ["a", "b", "c", "d"],
@@ -123,54 +125,74 @@ const main = async () => {
 
     const c = map.getCenter();
 
-    // based on function-type v0.18.0 plus support of identity
-    // https://www.mapbox.com/mapbox-gl-js/style-spec/#types-function
-    const symbolChaser = {
-        'markerType': 'ellipse',
-        'markerFill': 'rgb(216,115,149)',
-        'markerLineWidth': 0,
-        'markerLineOpacity': 1,
-        'markerWidth': 20,
-        'markerHeight': 20,
-    };
-    const symbolRunner = {
-        'markerType': 'ellipse',
-        'markerFill': 'lightgreen',
-        'markerLineWidth': 0,
-        'markerLineOpacity': 1,
-        'markerWidth': 20,
-        'markerHeight': 20,
-    };
+    const makeSymbol = color => ({
+        markerType: "ellipse",
+        markerFill: color,
+        markerLineWidth: 0,
+        markerLineOpacity: 1,
+        markerWidth: 20,
+        markerHeight: 20,
+    })
+    const symbolChaser = makeSymbol("rgb(216,115,149)");
+    const symbolRunner = makeSymbol("lightgreen");
+    const symbolGrey = makeSymbol("grey");
 
     const markers = {};
 
-    const time = meta.minTime;
+    let time = meta.minTime;
 
     console.log(meta);
     console.log(catchTimes);
 
+
     for (const [user, userLocations] of Object.entries(locations)) {
         const location = getLocationByTime(userLocations, time);
-        markers[user] = new maptalks.Marker(
-            new maptalks.Coordinate(location.lon, location.lat),
-            {
-                symbol: time >= catchTimes[user] ? symbolChaser : symbolRunner,
-            }
-        ).addTo(layer);
+        markers[user] = new maptalks.Marker(c, { symbol: symbolGrey }).addTo(layer);
     }
 
+
+    const updateMarker = (marker, userId, time) => {
+        const location = getLocationByTime(locations[userId], time);
+        marker.setCoordinates(new maptalks.Coordinate(location.lon, location.lat));
+        const isChaser = userId in catchTimes && time >= catchTimes[userId];
+        const isGrey = location.gameState === "TEAM_CREATION_PHASE" && !isChaser || location.gameState === "OVER" && isChaser;
+        const symbol = isGrey ? symbolGrey :
+            isChaser ? symbolChaser : symbolRunner;
+        marker.setSymbol(symbol);
+        // marker.updateSymbol({ markerFillOpacity: location.gameState == "RUNNING" ? 1 : 0.2 });
+    }
 
     const redraw = () => {
-        const time = timeSlider.value
         for (const [userId, marker] of Object.entries(markers)) {
-            const location = getLocationByTime(locations[userId], time);
-            marker.setCoordinates(new maptalks.Coordinate(location.lon, location.lat));
-            console.log(userId, time, catchTimes[userId], time - catchTimes[userId]);
-            marker.setSymbol(time >= catchTimes[userId] ? symbolChaser : symbolRunner);
+            updateMarker(marker, userId, time)
         }
     }
-    timeSlider.addEventListener("input", redraw);
 
+    let previousTimeStamp = null;
+    let paused = true;
+    const frame = timeStamp => {
+        if (previousTimeStamp !== null && !paused) {
+            const ellapsed = timeStamp - previousTimeStamp;
+            const factor = 120;
+            const newTime = time + ellapsed * factor;
+            time = Math.min(newTime, meta.maxTime);
+            timeSlider.value = time;
+            redraw();
+        }
+        previousTimeStamp = timeStamp;
+        requestAnimationFrame(frame)
+    }
+
+    requestAnimationFrame(frame);
+    redraw();
+
+    document.querySelector("#play").addEventListener("click", () => {
+        paused = !paused;
+    })
+    timeSlider.addEventListener("input", () => {
+        time = parseInt(timeSlider.value);
+        redraw();
+    });
 }
 
 
