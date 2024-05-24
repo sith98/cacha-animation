@@ -19,6 +19,10 @@
     input[type=range] {
         width: 90%;
     }
+
+    button {
+        width: 50px;
+    }
 </style>
 <link rel="stylesheet" href="https://unpkg.com/maptalks/dist/maptalks.css">
 <script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
@@ -27,8 +31,7 @@
 
     <div id="map" class="container"></div>
     <div class="controls">
-        <button id="play">Play/Pause</button>
-        <input type="range" min="1" max="100" value="50" class="slider" id="time">
+        <button id="play">Play</button> <input type="range" min="1" max="100" value="50" class="slider" id="time">
     </div>
     <script src="script.js"></script>
 </body>

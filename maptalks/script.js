@@ -1,5 +1,5 @@
 const loadJson = () => {
-    return Promise.all(["regular_status_update.json", "team_caught.json"].map(url => {
+    return Promise.all(["regular_status_update.json", "team_caught.json", "team_names.json"].map(url => {
         return fetch(url).then(res => res.json());
     }))
 }
@@ -99,7 +99,7 @@ const getMeta = (locations) => {
 }
 
 const main = async () => {
-    const [statusUpdate, teamCaught] = await loadJson();
+    const [statusUpdate, teamCaught, teamNames] = await loadJson();
 
     const locations = parseStatusUpdate(statusUpdate)
     const meta = getMeta(locations)
@@ -108,6 +108,8 @@ const main = async () => {
     const timeSlider = document.querySelector("#time");
     timeSlider.min = meta.minTime;
     timeSlider.max = meta.maxTime;
+
+    const playButton = document.querySelector("#play");
 
     const centerTime = meta.minTime + 0.5 * (meta.maxTime - meta.minTime);
 
@@ -125,14 +127,22 @@ const main = async () => {
 
     const c = map.getCenter();
 
-    const makeSymbol = color => ({
-        markerType: "ellipse",
-        markerFill: color,
-        markerLineWidth: 0,
-        markerLineOpacity: 1,
-        markerWidth: 20,
-        markerHeight: 20,
-    })
+    const makeSymbol = color => [
+        {
+            markerType: "ellipse",
+            markerFill: color,
+            markerLineWidth: 0,
+            markerLineOpacity: 1,
+            markerWidth: 20,
+            markerHeight: 20,
+        },
+        {
+            textFaceName: "sans-serif",
+            textName: "{name}",
+            textSize: 14,
+            textDy: 24
+        }
+    ]
     const symbolChaser = makeSymbol("rgb(216,115,149)");
     const symbolRunner = makeSymbol("lightgreen");
     const symbolGrey = makeSymbol("grey");
@@ -147,7 +157,12 @@ const main = async () => {
 
     for (const [user, userLocations] of Object.entries(locations)) {
         const location = getLocationByTime(userLocations, time);
-        markers[user] = new maptalks.Marker(c, { symbol: symbolGrey }).addTo(layer);
+        markers[user] = new maptalks.Marker(c, {
+            properties: {
+                name: teamNames[user],
+            },
+            symbol: symbolGrey
+        }).addTo(layer);
     }
 
 
@@ -167,6 +182,7 @@ const main = async () => {
             updateMarker(marker, userId, time)
         }
     }
+    console.log(markers);
 
     let previousTimeStamp = null;
     let paused = true;
@@ -177,8 +193,12 @@ const main = async () => {
             const newTime = time + ellapsed * factor;
             time = Math.min(newTime, meta.maxTime);
             timeSlider.value = time;
+            if (time === meta.maxTime) {
+                paused = true;
+            }
             redraw();
         }
+        playButton.innerHTML = paused ? "Play" : "Pause";
         previousTimeStamp = timeStamp;
         requestAnimationFrame(frame)
     }
@@ -186,8 +206,13 @@ const main = async () => {
     requestAnimationFrame(frame);
     redraw();
 
-    document.querySelector("#play").addEventListener("click", () => {
+    playButton.addEventListener("click", () => {
         paused = !paused;
+    })
+    window.addEventListener("keydown", evt => {
+        if (evt.key === " ") {
+            paused = !paused;
+        }
     })
     timeSlider.addEventListener("input", () => {
         time = parseInt(timeSlider.value);
