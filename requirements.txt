@@ -10,3 +10,4 @@ imageio[ffmpeg]
 kaleido
 scipy
 pyarrow
+tqdm
