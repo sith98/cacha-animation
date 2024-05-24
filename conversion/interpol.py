@@ -61,7 +61,7 @@ def clamp_data(teams, time_step=1000):
             "lat": spline_lat_pchip(nice_time),
             "lon": spline_lon_pchip(nice_time),
         }
-    return min_time, nice_time, nice_data
+    return min_time + nice_time, nice_data
 
 def pandaify_data(time, data):
     columns = pd.MultiIndex.from_product([data.keys(), ["lat", "lon"]], names=["team", "dim"])
@@ -76,7 +76,7 @@ def pandaify_data(time, data):
 
 
 teams = numpyify_data()
-offset, nice_time, nice_data = clamp_data(teams)
+nice_time, nice_data = clamp_data(teams)
 # Check if catastrophic cancelation occured:
 #print(float.hex(nice_time[1] - nice_time[0]))
 df = pandaify_data(nice_time, nice_data)
