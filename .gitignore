@@ -1,4 +1,5 @@
+__pycache__
 .venv
-experiments/video.mp4
+*.mp4
 gpx-animator/cacha-animation.mp4
 gpx-animator/cacha-animation-team-catched.mp4
