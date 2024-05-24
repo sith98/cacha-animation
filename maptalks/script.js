@@ -78,8 +78,11 @@ const getMeta = (locations) => {
     let minTime = null;
     let maxTime = null;
 
+    let minRunningTime = Infinity;
+    let maxRunningTime = Infinity;
+
     for (const array of Object.values(locations)) {
-        for (const { lon, lat, time } of array) {
+        for (const { lon, lat, time, gameState } of array) {
             minLat = Math.min(minLat, lat);
             maxLat = Math.max(maxLat, lat);
             minLon = Math.min(minLon, lon);
@@ -91,14 +94,53 @@ const getMeta = (locations) => {
             if (maxTime === null || time > maxTime) {
                 maxTime = time;
             }
+
+            if (gameState === "RUNNING") {
+                minRunningTime = Math.min(minRunningTime, time);
+            }
+            if (gameState === "OVER") {
+                maxRunningTime = Math.min(maxRunningTime, time);
+            }
         }
     }
+
     return {
         centerLat: (minLat + maxLat) / 2,
         centerLon: (minLon + maxLon) / 2,
         minTime,
         maxTime,
+        minRunningTime,
+        maxRunningTime,
     }
+}
+
+const getPings = (locations, meta, catchTimes) => {
+    const pingInterval = 5 * 60 * 1000;
+
+    const pingTimes = []
+    for (let ping = meta.minRunningTime + pingInterval; ping < meta.maxRunningTime; ping += pingInterval) {
+        pingTimes.push(ping)
+    }
+
+    const pings = []
+    for (const ping of pingTimes) {
+        const pingLocations = {}
+        for (const [user, userLocations] of Object.entries(locations)) {
+            for (const [index, entry] of userLocations.entries()) {
+                if (entry.time > ping) {
+                    const location = userLocations[index - 1];
+                    if (!(user in catchTimes && entry.time >= catchTimes[user])) {
+                        pingLocations[user] = location
+                    }
+                    break;
+                }
+            }
+        }
+        pings.push({ time: ping, locations: pingLocations })
+    }
+    console.log(pings)
+
+    return pings;
 }
 
 const wait = ms => new Promise((resolve, reject) => {
@@ -111,37 +153,18 @@ function waitForEvent(target, type) {
     }));
 }
 
-function createCanvasRecorder(source, fps) {
-    const target = source.cloneNode();
-    const ctx = target.getContext("2d");
-    ctx.drawImage(source, 0, 0);
+function createCanvasRecorder(source, fps = 60) {
+    const stream = source.captureStream(fps);
+    // const track = stream.getVideoTracks()[0];
 
-    const stream = target.captureStream(0);
-    const track = stream.getVideoTracks()[0];
-
-    const recorder = new MediaRecorder(stream, { mimeType: "video/webm;codecs=H264", });
+    const recorder = new MediaRecorder(stream, { mimeType: "video/webm" });
 
     const dataChunks = [];
     recorder.ondataavailable = (evt) => dataChunks.push(evt.data);
 
     recorder.start();
-    recorder.pause();
 
     return {
-        async captureFrame() {
-            const timer = wait(1000 / fps);
-
-            recorder.resume();
-
-            console.log("did resume");
-            ctx.clearRect(0, 0, target.width, target.height);
-            ctx.drawImage(source, 0, 0);
-            track.requestFrame();
-
-            await timer;
-            recorder.pause();
-            console.log("did pause");
-        },
         async finish() {
             recorder.stop();
             stream.getTracks().forEach((track) => track.stop());
@@ -164,19 +187,26 @@ const downloadBlob = (blob, filename) => {
 }
 
 const run = async (directory) => {
+    document.querySelector("#title").innerHTML = directory;
     const [statusUpdate, teamCaught, teamNames] = await loadJson(directory);
 
     const locations = parseStatusUpdate(statusUpdate)
-    const meta = getMeta(locations)
+    const meta = getMeta(locations);
     const catchTimes = getCatchTimes(teamCaught, meta.minTime);
+    const pings = getPings(locations, meta, catchTimes);
 
     const timeSlider = document.querySelector("#time");
     timeSlider.min = meta.minTime;
     timeSlider.max = meta.maxTime;
+    timeSlider.value = meta.minTime;
+
+    const timeSteps = []
+
+    for (let t = meta.minTime; t <= meta.maxTime; t += 30_000) {
+        timeSteps.push(t);
+    }
 
     const playButton = document.querySelector("#play");
-
-    const centerTime = meta.minTime + 0.5 * (meta.maxTime - meta.minTime);
 
     const map = new maptalks.Map('map', {
         center: [meta.centerLon, meta.centerLat],
@@ -196,10 +226,12 @@ const run = async (directory) => {
 
     const tailLayer = new maptalks.VectorLayer("t").addTo(map);
     const layer = new maptalks.VectorLayer("v").addTo(map);
+    const pingLayer = new maptalks.VectorLayer("p").addTo(map);
 
     const c = map.getCenter();
+    const markerSize = 20;
 
-    const makeSymbol = (color, size = 20) => [
+    const makeSymbol = (color, size = markerSize) => [
         {
             markerType: "ellipse",
             markerFill: color,
@@ -220,6 +252,7 @@ const run = async (directory) => {
     const colorRunner = "#24a924";
     const colorGrey = "#999999";
     const symbolGrey = makeSymbol(colorGrey);
+    const symbolPing = makeSymbol(colorRunner);
     const symbolTail = makeSymbol(colorGrey, 5);
 
     const markers = {};
@@ -240,6 +273,14 @@ const run = async (directory) => {
         }).addTo(layer);
     }
 
+    const pingMarkers = {}
+    for (const user of Object.keys(locations)) {
+        pingMarkers[user] = new maptalks.Marker(c, {
+            symbol: symbolPing
+        }).addTo(pingLayer);
+    }
+
+    const playFactor = 120;
 
     const tailDuration = 5 * 60 * 1000;
     // const tailDuration = 0;
@@ -270,11 +311,32 @@ const run = async (directory) => {
         marker.updateSymbol([{ markerFill: color }, {}]);
     }
 
+    const pingMarkerSize = markerSize * 3;
+    const pingMarkerTime = 1000;
+    const scaledPingMarkerTime = pingMarkerTime * playFactor;
+    const updatePingMarker = (marker, userId, time) => {
+        const ping = pings.find(ping => ping.time <= time && time <= ping.time + scaledPingMarkerTime);
+        if (ping === undefined || !(userId in ping.locations)) {
+            marker.hide();
+            return;
+        }
+        marker.show();
+        const factor = (time - ping.time) / scaledPingMarkerTime;
+        const size = markerSize * (1 - factor) + pingMarkerSize * factor;
+        marker.updateSymbol([{ markerFillOpacity: 1 - factor, markerWidth: size, markerHeight: size }, {}]);
+        const location = ping.locations[userId];
+        if (userId === "b1d91f00-1514-11ef-90d9-870e7bed4f26") {
+            console.log(location);
+        }
+        marker.setCoordinates(new maptalks.Coordinate(location.lon, location.lat))
+    }
+
     const log = document.querySelector("#log")
     const redraw = () => {
         log.innerHTML = time;
         for (const [userId, marker] of Object.entries(markers)) {
             updateMarker(marker, userId, time)
+            updatePingMarker(pingMarkers[userId], userId, time)
             const roundedTime = Math.floor(time / tailStepSize) * tailStepSize;
             for (const [index, tailMarker] of tailMarkers[userId].entries()) {
                 updateMarker(tailMarker, userId, roundedTime - tailStepSize * index);
@@ -286,14 +348,14 @@ const run = async (directory) => {
     let paused = true;
 
     let stopped = false;
+
     const frame = timeStamp => {
         if (stopped) {
             return;
         }
         if (previousTimeStamp !== null && !paused) {
             const ellapsed = timeStamp - previousTimeStamp;
-            const factor = 120;
-            const newTime = time + ellapsed * factor;
+            const newTime = time + ellapsed * playFactor;
             time = Math.min(newTime, meta.maxTime);
             timeSlider.value = time;
             if (time === meta.maxTime) {
@@ -322,29 +384,32 @@ const run = async (directory) => {
         time = parseInt(timeSlider.value);
         redraw();
     }
-    const downloadButtonHandler = async () => {
-        const recorder = createCanvasRecorder(document.querySelector("canvas"), 60);
-        for (time = meta.minTime; time < meta.maxTime; time += 10_000) {
-            redraw()
-            await recorder.captureFrame();
-            console.log((time - meta.minTime) / (meta.maxTime - meta.minTime));
-        }
 
-        const blob = await recorder.finish();
-        downloadBlob(blob, "video.webm")
+    const recordButton = document.querySelector("#record");
+    let recorder = null
+    const recordButtonHandle = async () => {
+        if (recorder === null) {
+            recorder = createCanvasRecorder(document.querySelector("canvas"));
+            recordButton.innerHTML = "Save";
+        } else {
+            const blob = await recorder.finish();
+            downloadBlob(blob, "video.webm")
+            recorder = null;
+            recordButton.innerHTML = "Record";
+        }
     }
 
     playButton.addEventListener("click", clickHandler)
     window.addEventListener("keydown", keyHandler)
     timeSlider.addEventListener("input", sliderHandler);
-    document.querySelector("#download").addEventListener("click", downloadButtonHandler);
+    recordButton.addEventListener("click", recordButtonHandle);
 
     return () => {
         stopped = true;
         playButton.removeEventListener("click", clickHandler)
         window.removeEventListener("keydown", keyHandler)
         timeSlider.removeEventListener("input", sliderHandler);
-        document.querySelector("#download").removeEventListener("click", downloadButtonHandler);
+        recordButton.removeEventListener("click", recordButtonHandle);
         map.off(mapClickHander);
         map.remove();
     }
@@ -353,6 +418,20 @@ const run = async (directory) => {
 
 
 const main = async () => {
+    let hdMode = false;
+
+    document.querySelector("#mode").addEventListener("click", evt => {
+        hdMode = !hdMode
+        if (hdMode) {
+            const mapContainer = document.querySelector("#map");
+            mapContainer.style.width = "1920px";
+            mapContainer.style.height = "1080px";
+        } else {
+            mapContainer.style.width = "100%";
+            mapContainer.style.height = "90%";
+        }
+
+    })
     const res = await fetch("games.json");
     const games = await res.json();
 
