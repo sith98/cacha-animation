@@ -1,5 +1,5 @@
-const loadJson = () => {
-    return Promise.all(["regular_status_update.json", "team_caught.json", "team_names.json"].map(url => {
+const loadJson = (dir) => {
+    return Promise.all(["regular_status_update.json", "team_caught.json", "team_names.json"].map(url => `${dir}/${url}`).map(url => {
         return fetch(url).then(res => res.json());
     }))
 }
@@ -51,7 +51,10 @@ const getLocationByTime = (locations, time) => {
 }
 
 const getCatchTimeStamp = (isoTime) => {
-    return new Date(isoTime + "Z").getTime();
+    if (!isoTime.includes("+")) {
+        isoTime += "Z"
+    }
+    return new Date(isoTime).getTime();
 }
 
 const getCatchTimes = (teamCaught, minTime) => {
@@ -160,8 +163,8 @@ const downloadBlob = (blob, filename) => {
     a.click();
 }
 
-const main = async () => {
-    const [statusUpdate, teamCaught, teamNames] = await loadJson();
+const run = async (directory) => {
+    const [statusUpdate, teamCaught, teamNames] = await loadJson(directory);
 
     const locations = parseStatusUpdate(statusUpdate)
     const meta = getMeta(locations)
@@ -184,6 +187,12 @@ const main = async () => {
             attribution: '&copy; <a href="http://osm.org">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/">CARTO</a>'
         })
     });
+
+    const mapClickHander = (param) => {
+        const coor = param.coordinate;
+        console.log("lat", coor.y, "lon", coor.x)
+    }
+    map.on('click', mapClickHander);
 
     const tailLayer = new maptalks.VectorLayer("t").addTo(map);
     const layer = new maptalks.VectorLayer("v").addTo(map);
@@ -261,7 +270,9 @@ const main = async () => {
         marker.updateSymbol([{ markerFill: color }, {}]);
     }
 
+    const log = document.querySelector("#log")
     const redraw = () => {
+        log.innerHTML = time;
         for (const [userId, marker] of Object.entries(markers)) {
             updateMarker(marker, userId, time)
             const roundedTime = Math.floor(time / tailStepSize) * tailStepSize;
@@ -270,11 +281,15 @@ const main = async () => {
             }
         }
     }
-    console.log(markers);
 
     let previousTimeStamp = null;
     let paused = true;
+
+    let stopped = false;
     const frame = timeStamp => {
+        if (stopped) {
+            return;
+        }
         if (previousTimeStamp !== null && !paused) {
             const ellapsed = timeStamp - previousTimeStamp;
             const factor = 120;
@@ -294,21 +309,20 @@ const main = async () => {
     requestAnimationFrame(frame);
     redraw();
 
-    playButton.addEventListener("click", () => {
+    const clickHandler = () => {
         paused = !paused;
-    })
-    window.addEventListener("keydown", evt => {
+    }
+    const keyHandler = evt => {
         if (evt.key === " ") {
             evt.preventDefault();
             paused = !paused;
         }
-    })
-    timeSlider.addEventListener("input", () => {
+    }
+    const sliderHandler = () => {
         time = parseInt(timeSlider.value);
         redraw();
-    });
-
-    document.querySelector("#download").addEventListener("click", async () => {
+    }
+    const downloadButtonHandler = async () => {
         const recorder = createCanvasRecorder(document.querySelector("canvas"), 60);
         for (time = meta.minTime; time < meta.maxTime; time += 10_000) {
             redraw()
@@ -318,10 +332,58 @@ const main = async () => {
 
         const blob = await recorder.finish();
         downloadBlob(blob, "video.webm")
-    })
+    }
+
+    playButton.addEventListener("click", clickHandler)
+    window.addEventListener("keydown", keyHandler)
+    timeSlider.addEventListener("input", sliderHandler);
+    document.querySelector("#download").addEventListener("click", downloadButtonHandler);
+
+    return () => {
+        stopped = true;
+        playButton.removeEventListener("click", clickHandler)
+        window.removeEventListener("keydown", keyHandler)
+        timeSlider.removeEventListener("input", sliderHandler);
+        document.querySelector("#download").removeEventListener("click", downloadButtonHandler);
+        map.off(mapClickHander);
+        map.remove();
+    }
 
 }
 
 
+const main = async () => {
+    const res = await fetch("games.json");
+    const games = await res.json();
+
+    let index = -1;
+
+    let destructor = null;
+    let loading = false;
+
+    const switchGame = async () => {
+        if (loading) {
+            return;
+        }
+        loading = true;
+        if (destructor !== null) {
+            destructor();
+        }
+        index = (index + 1) % games.length;
+        const game = games[index];
+        destructor = await run(game);
+
+        loading = false;
+    }
+
+    window.addEventListener("keydown", async evt => {
+        if (evt.key === "r") {
+            await switchGame();
+        }
+    });
+
+    await switchGame();
+
+}
 
 main();
