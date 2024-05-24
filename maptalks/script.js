@@ -98,6 +98,68 @@ const getMeta = (locations) => {
     }
 }
 
+const wait = ms => new Promise((resolve, reject) => {
+    setTimeout(() => resolve(), ms);
+})
+
+function waitForEvent(target, type) {
+    return new Promise((res) => target.addEventListener(type, res, {
+        once: true
+    }));
+}
+
+function createCanvasRecorder(source, fps) {
+    const target = source.cloneNode();
+    const ctx = target.getContext("2d");
+    ctx.drawImage(source, 0, 0);
+
+    const stream = target.captureStream(0);
+    const track = stream.getVideoTracks()[0];
+
+    const recorder = new MediaRecorder(stream, { mimeType: "video/webm;codecs=H264", });
+
+    const dataChunks = [];
+    recorder.ondataavailable = (evt) => dataChunks.push(evt.data);
+
+    recorder.start();
+    recorder.pause();
+
+    return {
+        async captureFrame() {
+            const timer = wait(1000 / fps);
+
+            recorder.resume();
+
+            console.log("did resume");
+            ctx.clearRect(0, 0, target.width, target.height);
+            ctx.drawImage(source, 0, 0);
+            track.requestFrame();
+
+            await timer;
+            recorder.pause();
+            console.log("did pause");
+        },
+        async finish() {
+            recorder.stop();
+            stream.getTracks().forEach((track) => track.stop());
+            await waitForEvent(recorder, "stop");
+            return new Blob(dataChunks);
+        },
+    };
+}
+
+const downloadBlob = (blob, filename) => {
+    const a = document.createElement("a");
+    a.style = "display: none";
+    document.body.appendChild(a);
+
+    const url = URL.createObjectURL(blob);
+
+    a.href = url;
+    a.download = filename;
+    a.click();
+}
+
 const main = async () => {
     const [statusUpdate, teamCaught, teamNames] = await loadJson();
 
@@ -145,9 +207,9 @@ const main = async () => {
         },
     ]
 
-    const colorChaser = "rgb(216,115,149)";
-    const colorRunner = "lightgreen";
-    const colorGrey = "grey";
+    const colorChaser = "#a33636";
+    const colorRunner = "#24a924";
+    const colorGrey = "#999999";
     const symbolGrey = makeSymbol(colorGrey);
     const symbolTail = makeSymbol(colorGrey, 5);
 
@@ -171,7 +233,8 @@ const main = async () => {
 
 
     const tailDuration = 5 * 60 * 1000;
-    const tailStepSize = 5 * 1000;
+    // const tailDuration = 0;
+    const tailStepSize = 10 * 1000;
     const nTail = Math.floor(tailDuration / tailStepSize);
 
     const tailMarkers = {}
@@ -236,6 +299,7 @@ const main = async () => {
     })
     window.addEventListener("keydown", evt => {
         if (evt.key === " ") {
+            evt.preventDefault();
             paused = !paused;
         }
     })
@@ -243,6 +307,19 @@ const main = async () => {
         time = parseInt(timeSlider.value);
         redraw();
     });
+
+    document.querySelector("#download").addEventListener("click", async () => {
+        const recorder = createCanvasRecorder(document.querySelector("canvas"), 60);
+        for (time = meta.minTime; time < meta.maxTime; time += 10_000) {
+            redraw()
+            await recorder.captureFrame();
+            console.log((time - meta.minTime) / (meta.maxTime - meta.minTime));
+        }
+
+        const blob = await recorder.finish();
+        downloadBlob(blob, "video.webm")
+    })
+
 }
 
 
