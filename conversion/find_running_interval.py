@@ -34,4 +34,4 @@ print(running_interval)
 
 # write interval to json
 with open(os.path.join("data", GAME, "running_interval.json"), "w") as f:
-    json.dump(running_interval, f)
+    json.dump(running_interval, f, indent=4)
