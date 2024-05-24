@@ -38,7 +38,7 @@ def numpyify_data():
     #return team_lat, team_lon, team_timestamp
     return teams
 
-def clamp_data(teams, num=1000):
+def clamp_data(teams, time_step=1000):
     min_times = [np.min(team["timestamp"]) for team in teams.values()]
     max_times = [np.max(team["timestamp"]) for team in teams.values()]
     #team_lat, team_lon, team_timestamp,
@@ -52,7 +52,7 @@ def clamp_data(teams, num=1000):
     # We lose a lot of precision for large timestamps, so shift the region
     # of interest to lie near zero
     #nice_time = np.linspace(min_time, max_time, num)
-    nice_time = np.linspace(0, max_time - min_time, num)
+    nice_time = np.arange(0, max_time - min_time, time_step)
     nice_data = dict()
     for team, data in teams.items():
         spline_lat_pchip = PchipInterpolator(data["timestamp"] - min_time, data["lat"])
