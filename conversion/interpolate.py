@@ -4,6 +4,7 @@ from scipy.interpolate import PchipInterpolator
 #import matplotlib.pyplot as plt
 import os
 import json
+import copy
 from pathlib import Path
 
 def main(time_step_ms, inactive_after_ms):
@@ -16,8 +17,41 @@ def main(time_step_ms, inactive_after_ms):
         interpol_dataframe = consolidate_data(teams, time_step_ms)
         Path(f"data/{game_name}/log-interpol").mkdir(parents=True, exist_ok=True)
         interpol_dataframe.to_parquet(f"data/{game_name}/log-interpol/interpol.parquet")
-        connection_dataframe = connection_status(interpol_dataframe.index, teams, inactive_after_ms)
+        time_equi = interpol_dataframe.index
+        connection_dataframe = connection_status(time_equi, teams, inactive_after_ms)
         connection_dataframe.to_parquet(f"data/{game_name}/log-interpol/connection.parquet")
+        # Write back to json
+        result_json = []
+        for team_json in os.listdir(f"data/{game_name}/log-by-user/"):
+            with open(f"data/{game_name}/log-by-user/{team_json}") as file:
+                json_data = json.load(file)
+            json_data.sort(key=lambda entry: entry["current_location"]["timestamp"])
+            team_name = team_json.rstrip(".json")
+            #team_dataframe = teams[team_name]
+            current_json_index = 0
+            while json_data[current_json_index+1]["current_location"]["timestamp"] < time_equi[0]:
+                next_json_entry = copy.deepcopy(json_data[current_json_index])
+                next_json_entry["is_connection_active"] = True
+                result_json.append(next_json_entry)
+                current_json_index += 1
+            for t in time_equi:
+                while json_data[current_json_index+1]["current_location"]["timestamp"] < t:
+                    current_json_index += 1
+                assert json_data[current_json_index]["current_location"]["timestamp"] <= t
+                next_json_entry = copy.deepcopy(json_data[current_json_index])
+                next_json_entry["current_location"]["timestamp"] = t
+                next_json_entry["current_location"]["lat"] = interpol_dataframe[team_name, "lat"][t]
+                next_json_entry["current_location"]["lon"] = interpol_dataframe[team_name, "lon"][t]
+                next_json_entry["is_connection_active"] = bool(connection_dataframe[team_name][t])
+                result_json.append(next_json_entry)
+            while current_json_index+1 < len(json_data):
+                next_json_entry = copy.deepcopy(json_data[current_json_index])
+                next_json_entry["is_connection_active"] = True
+                result_json.append(next_json_entry)
+                current_json_index += 1
+        with open(f"data/{game_name}/log-interpol/interpol.json", "w") as file:
+            json.dump(result_json, file, indent=4)
+
 
 def json_to_dataframe(path):
     with open(path) as file:
@@ -75,4 +109,4 @@ def connection_status(time_equi, teams, inactive_after_ms):
     return connection_dataframe
 
 if __name__ == "__main__":
-    main(time_step_ms=1000, inactive_after_ms=30_000)
+    main(time_step_ms=5000, inactive_after_ms=30_000)
