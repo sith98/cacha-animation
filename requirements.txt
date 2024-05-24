@@ -9,3 +9,4 @@ imageio
 imageio[ffmpeg]
 kaleido
 scipy
+pyarrow
