@@ -1,0 +1,3986 @@
+[
+    {
+        "timestamp": "2024-05-24 15:06:17.470",
+        "current_location": {
+            "lat": 49.0023767,
+            "lon": 12.0969728,
+            "timestamp": 1716563175803
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "OVER",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:06:13.050",
+        "current_location": {
+            "lat": 49.0024193,
+            "lon": 12.0968908,
+            "timestamp": 1716563171446
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:06:09.392",
+        "current_location": {
+            "lat": 49.0024838,
+            "lon": 12.0968688,
+            "timestamp": 1716563167745
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:06:05.470",
+        "current_location": {
+            "lat": 49.0025299,
+            "lon": 12.0968605,
+            "timestamp": 1716563163821
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:06:01.429",
+        "current_location": {
+            "lat": 49.0025937,
+            "lon": 12.0968498,
+            "timestamp": 1716563159809
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:57.870",
+        "current_location": {
+            "lat": 49.002644,
+            "lon": 12.0968366,
+            "timestamp": 1716563156232
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:54.052",
+        "current_location": {
+            "lat": 49.0027001,
+            "lon": 12.0968676,
+            "timestamp": 1716563152413
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:50.449",
+        "current_location": {
+            "lat": 49.0026958,
+            "lon": 12.0969516,
+            "timestamp": 1716563148807
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:46.469",
+        "current_location": {
+            "lat": 49.0026864,
+            "lon": 12.0970317,
+            "timestamp": 1716563144808
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:42.430",
+        "current_location": {
+            "lat": 49.0026948,
+            "lon": 12.0971243,
+            "timestamp": 1716563140747
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:38.212",
+        "current_location": {
+            "lat": 49.0027032,
+            "lon": 12.0972077,
+            "timestamp": 1716563136586
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:34.110",
+        "current_location": {
+            "lat": 49.0026985,
+            "lon": 12.0972885,
+            "timestamp": 1716563132499
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:30.032",
+        "current_location": {
+            "lat": 49.0027121,
+            "lon": 12.0973925,
+            "timestamp": 1716563128382
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:26.010",
+        "current_location": {
+            "lat": 49.0027223,
+            "lon": 12.0974744,
+            "timestamp": 1716563124385
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:22.212",
+        "current_location": {
+            "lat": 49.0027248,
+            "lon": 12.0975574,
+            "timestamp": 1716563120572
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:18.032",
+        "current_location": {
+            "lat": 49.0027309,
+            "lon": 12.0976592,
+            "timestamp": 1716563116438
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:14.090",
+        "current_location": {
+            "lat": 49.002727,
+            "lon": 12.0977426,
+            "timestamp": 1716563112476
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:10.530",
+        "current_location": {
+            "lat": 49.0027364,
+            "lon": 12.0978285,
+            "timestamp": 1716563108817
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:06.232",
+        "current_location": {
+            "lat": 49.0027349,
+            "lon": 12.0979485,
+            "timestamp": 1716563104593
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:05:02.212",
+        "current_location": {
+            "lat": 49.0027332,
+            "lon": 12.0980332,
+            "timestamp": 1716563100564
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:58.209",
+        "current_location": {
+            "lat": 49.0027289,
+            "lon": 12.0981377,
+            "timestamp": 1716563096593
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:54.272",
+        "current_location": {
+            "lat": 49.0027234,
+            "lon": 12.0982182,
+            "timestamp": 1716563092603
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:50.069",
+        "current_location": {
+            "lat": 49.0027315,
+            "lon": 12.0983216,
+            "timestamp": 1716563088457
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:46.449",
+        "current_location": {
+            "lat": 49.0027284,
+            "lon": 12.0984084,
+            "timestamp": 1716563084811
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:42.672",
+        "current_location": {
+            "lat": 49.0027242,
+            "lon": 12.0984809,
+            "timestamp": 1716563081059
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:39.052",
+        "current_location": {
+            "lat": 49.0027279,
+            "lon": 12.0985691,
+            "timestamp": 1716563077394
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:35.029",
+        "current_location": {
+            "lat": 49.002727,
+            "lon": 12.0986666,
+            "timestamp": 1716563073387
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:30.990",
+        "current_location": {
+            "lat": 49.0027249,
+            "lon": 12.0987634,
+            "timestamp": 1716563069344
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:27.032",
+        "current_location": {
+            "lat": 49.0027244,
+            "lon": 12.0988596,
+            "timestamp": 1716563065422
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:23.472",
+        "current_location": {
+            "lat": 49.0027343,
+            "lon": 12.098956,
+            "timestamp": 1716563061815
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:19.409",
+        "current_location": {
+            "lat": 49.002787,
+            "lon": 12.0989986,
+            "timestamp": 1716563057798
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:15.832",
+        "current_location": {
+            "lat": 49.0028416,
+            "lon": 12.0990064,
+            "timestamp": 1716563054159
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:12.092",
+        "current_location": {
+            "lat": 49.0028974,
+            "lon": 12.0990146,
+            "timestamp": 1716563050470
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:08.432",
+        "current_location": {
+            "lat": 49.002954,
+            "lon": 12.0990061,
+            "timestamp": 1716563046822
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:04.449",
+        "current_location": {
+            "lat": 49.0030065,
+            "lon": 12.0990198,
+            "timestamp": 1716563042833
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:04:00.449",
+        "current_location": {
+            "lat": 49.0030833,
+            "lon": 12.0989999,
+            "timestamp": 1716563038810
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:56.489",
+        "current_location": {
+            "lat": 49.0031299,
+            "lon": 12.0989935,
+            "timestamp": 1716563034826
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:52.429",
+        "current_location": {
+            "lat": 49.0031487,
+            "lon": 12.0989768,
+            "timestamp": 1716563030804
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "HUNTER",
+        "team_color": "#FF0000"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:48.492",
+        "current_location": {
+            "lat": 49.0031502,
+            "lon": 12.0989753,
+            "timestamp": 1716563026809
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:44.509",
+        "current_location": {
+            "lat": 49.0031519,
+            "lon": 12.0989732,
+            "timestamp": 1716563022830
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:40.512",
+        "current_location": {
+            "lat": 49.0031522,
+            "lon": 12.0989729,
+            "timestamp": 1716563018841
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:36.489",
+        "current_location": {
+            "lat": 49.0031539,
+            "lon": 12.0989684,
+            "timestamp": 1716563014815
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:32.390",
+        "current_location": {
+            "lat": 49.0031358,
+            "lon": 12.0988974,
+            "timestamp": 1716563010811
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:28.450",
+        "current_location": {
+            "lat": 49.0031792,
+            "lon": 12.0989075,
+            "timestamp": 1716563006804
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:23.992",
+        "current_location": {
+            "lat": 49.0031585,
+            "lon": 12.0988691,
+            "timestamp": 1716563002404
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:20.469",
+        "current_location": {
+            "lat": 49.0031598,
+            "lon": 12.0989975,
+            "timestamp": 1716562998836
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:16.469",
+        "current_location": {
+            "lat": 49.0031032,
+            "lon": 12.0989896,
+            "timestamp": 1716562994822
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:12.449",
+        "current_location": {
+            "lat": 49.0030459,
+            "lon": 12.0989715,
+            "timestamp": 1716562990829
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:08.449",
+        "current_location": {
+            "lat": 49.002979,
+            "lon": 12.09896,
+            "timestamp": 1716562986828
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:04.848",
+        "current_location": {
+            "lat": 49.0029134,
+            "lon": 12.0989542,
+            "timestamp": 1716562983186
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:03:00.989",
+        "current_location": {
+            "lat": 49.0028475,
+            "lon": 12.0989427,
+            "timestamp": 1716562979388
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:57.188",
+        "current_location": {
+            "lat": 49.0027631,
+            "lon": 12.0989163,
+            "timestamp": 1716562975572
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:53.472",
+        "current_location": {
+            "lat": 49.0027035,
+            "lon": 12.098845,
+            "timestamp": 1716562971825
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:48.929",
+        "current_location": {
+            "lat": 49.0026187,
+            "lon": 12.0988346,
+            "timestamp": 1716562967292
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:45.169",
+        "current_location": {
+            "lat": 49.0025427,
+            "lon": 12.0988854,
+            "timestamp": 1716562963544
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:41.469",
+        "current_location": {
+            "lat": 49.0024729,
+            "lon": 12.0989127,
+            "timestamp": 1716562959815
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:36.849",
+        "current_location": {
+            "lat": 49.0023756,
+            "lon": 12.0988868,
+            "timestamp": 1716562955230
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:33.328",
+        "current_location": {
+            "lat": 49.0022992,
+            "lon": 12.0988888,
+            "timestamp": 1716562951670
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:29.308",
+        "current_location": {
+            "lat": 49.0022319,
+            "lon": 12.0988895,
+            "timestamp": 1716562947658
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:25.449",
+        "current_location": {
+            "lat": 49.002156,
+            "lon": 12.0988952,
+            "timestamp": 1716562943803
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:21.488",
+        "current_location": {
+            "lat": 49.0020528,
+            "lon": 12.0989135,
+            "timestamp": 1716562939830
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:17.732",
+        "current_location": {
+            "lat": 49.0019571,
+            "lon": 12.0989067,
+            "timestamp": 1716562936089
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:13.989",
+        "current_location": {
+            "lat": 49.0018443,
+            "lon": 12.098907,
+            "timestamp": 1716562932366
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:10.372",
+        "current_location": {
+            "lat": 49.0017431,
+            "lon": 12.0989299,
+            "timestamp": 1716562928730
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:06.788",
+        "current_location": {
+            "lat": 49.0016539,
+            "lon": 12.0989109,
+            "timestamp": 1716562925140
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:02:03.168",
+        "current_location": {
+            "lat": 49.001589,
+            "lon": 12.0989159,
+            "timestamp": 1716562921507
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:59.212",
+        "current_location": {
+            "lat": 49.0015252,
+            "lon": 12.0989196,
+            "timestamp": 1716562917537
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:55.092",
+        "current_location": {
+            "lat": 49.0014607,
+            "lon": 12.098911,
+            "timestamp": 1716562913376
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:51.389",
+        "current_location": {
+            "lat": 49.0014047,
+            "lon": 12.0989021,
+            "timestamp": 1716562909640
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:47.409",
+        "current_location": {
+            "lat": 49.0013496,
+            "lon": 12.0988786,
+            "timestamp": 1716562905800
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:43.628",
+        "current_location": {
+            "lat": 49.0012892,
+            "lon": 12.0988602,
+            "timestamp": 1716562901972
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:40.012",
+        "current_location": {
+            "lat": 49.0012396,
+            "lon": 12.0988282,
+            "timestamp": 1716562898386
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:36.450",
+        "current_location": {
+            "lat": 49.0011905,
+            "lon": 12.0987969,
+            "timestamp": 1716562894791
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:32.432",
+        "current_location": {
+            "lat": 49.0011383,
+            "lon": 12.0987558,
+            "timestamp": 1716562890797
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:28.772",
+        "current_location": {
+            "lat": 49.0011,
+            "lon": 12.0987294,
+            "timestamp": 1716562887150
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:25.192",
+        "current_location": {
+            "lat": 49.0010572,
+            "lon": 12.0986976,
+            "timestamp": 1716562883558
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:21.429",
+        "current_location": {
+            "lat": 49.0010112,
+            "lon": 12.0986596,
+            "timestamp": 1716562879803
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:17.448",
+        "current_location": {
+            "lat": 49.0009526,
+            "lon": 12.0986258,
+            "timestamp": 1716562875829
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:13.492",
+        "current_location": {
+            "lat": 49.0009082,
+            "lon": 12.0986117,
+            "timestamp": 1716562871833
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:09.292",
+        "current_location": {
+            "lat": 49.000855,
+            "lon": 12.0986024,
+            "timestamp": 1716562867652
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:05.492",
+        "current_location": {
+            "lat": 49.00081,
+            "lon": 12.0985868,
+            "timestamp": 1716562863824
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:01:01.432",
+        "current_location": {
+            "lat": 49.000769,
+            "lon": 12.0985734,
+            "timestamp": 1716562859826
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:57.472",
+        "current_location": {
+            "lat": 49.0006996,
+            "lon": 12.0985569,
+            "timestamp": 1716562855842
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:53.989",
+        "current_location": {
+            "lat": 49.0006456,
+            "lon": 12.0984369,
+            "timestamp": 1716562852337
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:50.209",
+        "current_location": {
+            "lat": 49.0006426,
+            "lon": 12.0982601,
+            "timestamp": 1716562848591
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:46.468",
+        "current_location": {
+            "lat": 49.0005849,
+            "lon": 12.0982154,
+            "timestamp": 1716562844823
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:42.488",
+        "current_location": {
+            "lat": 49.000528,
+            "lon": 12.0982192,
+            "timestamp": 1716562840821
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:38.389",
+        "current_location": {
+            "lat": 49.0004687,
+            "lon": 12.0982259,
+            "timestamp": 1716562836636
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:34.188",
+        "current_location": {
+            "lat": 49.0004171,
+            "lon": 12.0981986,
+            "timestamp": 1716562832496
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:30.372",
+        "current_location": {
+            "lat": 49.0003558,
+            "lon": 12.0981788,
+            "timestamp": 1716562828768
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:26.172",
+        "current_location": {
+            "lat": 49.0003047,
+            "lon": 12.0981576,
+            "timestamp": 1716562824555
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:22.448",
+        "current_location": {
+            "lat": 49.0002578,
+            "lon": 12.0981437,
+            "timestamp": 1716562820818
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:18.468",
+        "current_location": {
+            "lat": 49.0002072,
+            "lon": 12.0981094,
+            "timestamp": 1716562816815
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:14.468",
+        "current_location": {
+            "lat": 49.0001484,
+            "lon": 12.098066,
+            "timestamp": 1716562812815
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:10.268",
+        "current_location": {
+            "lat": 49.0001108,
+            "lon": 12.0980477,
+            "timestamp": 1716562808653
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:06.448",
+        "current_location": {
+            "lat": 49.0000669,
+            "lon": 12.0980079,
+            "timestamp": 1716562804837
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 15:00:02.468",
+        "current_location": {
+            "lat": 49.0000191,
+            "lon": 12.0979406,
+            "timestamp": 1716562800687
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:58.273",
+        "current_location": {
+            "lat": 48.9999674,
+            "lon": 12.0979266,
+            "timestamp": 1716562796640
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:54.288",
+        "current_location": {
+            "lat": 48.9999166,
+            "lon": 12.0978759,
+            "timestamp": 1716562792673
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:50.452",
+        "current_location": {
+            "lat": 48.9998655,
+            "lon": 12.0978272,
+            "timestamp": 1716562788817
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:46.452",
+        "current_location": {
+            "lat": 48.9998139,
+            "lon": 12.0977752,
+            "timestamp": 1716562784833
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:42.452",
+        "current_location": {
+            "lat": 48.9997589,
+            "lon": 12.0977115,
+            "timestamp": 1716562780818
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:38.808",
+        "current_location": {
+            "lat": 48.9997114,
+            "lon": 12.0976622,
+            "timestamp": 1716562777164
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:35.192",
+        "current_location": {
+            "lat": 48.9996707,
+            "lon": 12.0976154,
+            "timestamp": 1716562773568
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:31.092",
+        "current_location": {
+            "lat": 48.9996142,
+            "lon": 12.0975602,
+            "timestamp": 1716562769472
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:27.252",
+        "current_location": {
+            "lat": 48.9995615,
+            "lon": 12.0975459,
+            "timestamp": 1716562765631
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:23.448",
+        "current_location": {
+            "lat": 48.9995076,
+            "lon": 12.0975334,
+            "timestamp": 1716562761821
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:19.488",
+        "current_location": {
+            "lat": 48.9994391,
+            "lon": 12.0975122,
+            "timestamp": 1716562757830
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:15.314",
+        "current_location": {
+            "lat": 48.999373,
+            "lon": 12.0974971,
+            "timestamp": 1716562753710
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:11.494",
+        "current_location": {
+            "lat": 48.9993182,
+            "lon": 12.0974807,
+            "timestamp": 1716562749826
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:07.412",
+        "current_location": {
+            "lat": 48.9992654,
+            "lon": 12.0974387,
+            "timestamp": 1716562745808
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:03.894",
+        "current_location": {
+            "lat": 48.9992094,
+            "lon": 12.097452,
+            "timestamp": 1716562742256
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:59:00.153",
+        "current_location": {
+            "lat": 48.9991477,
+            "lon": 12.0974152,
+            "timestamp": 1716562738532
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:56.488",
+        "current_location": {
+            "lat": 48.9990717,
+            "lon": 12.0973884,
+            "timestamp": 1716562734811
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:52.468",
+        "current_location": {
+            "lat": 48.9990276,
+            "lon": 12.0973734,
+            "timestamp": 1716562730817
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:48.468",
+        "current_location": {
+            "lat": 48.9989751,
+            "lon": 12.0973648,
+            "timestamp": 1716562726816
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:44.352",
+        "current_location": {
+            "lat": 48.9989173,
+            "lon": 12.0973622,
+            "timestamp": 1716562722740
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:40.412",
+        "current_location": {
+            "lat": 48.9988613,
+            "lon": 12.0973618,
+            "timestamp": 1716562718807
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:36.448",
+        "current_location": {
+            "lat": 48.9988284,
+            "lon": 12.0973599,
+            "timestamp": 1716562714802
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:32.492",
+        "current_location": {
+            "lat": 48.9987722,
+            "lon": 12.0973583,
+            "timestamp": 1716562710820
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:28.492",
+        "current_location": {
+            "lat": 48.9987139,
+            "lon": 12.0973691,
+            "timestamp": 1716562706809
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:24.492",
+        "current_location": {
+            "lat": 48.9986787,
+            "lon": 12.0973083,
+            "timestamp": 1716562702823
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:20.474",
+        "current_location": {
+            "lat": 48.9985316,
+            "lon": 12.0972985,
+            "timestamp": 1716562698816
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:16.414",
+        "current_location": {
+            "lat": 48.9985211,
+            "lon": 12.0972444,
+            "timestamp": 1716562694762
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:12.472",
+        "current_location": {
+            "lat": 48.9985243,
+            "lon": 12.0971417,
+            "timestamp": 1716562690822
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:08.828",
+        "current_location": {
+            "lat": 48.9985121,
+            "lon": 12.0970588,
+            "timestamp": 1716562687156
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:05.048",
+        "current_location": {
+            "lat": 48.9985357,
+            "lon": 12.0969673,
+            "timestamp": 1716562683375
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:58:01.172",
+        "current_location": {
+            "lat": 48.9985294,
+            "lon": 12.0968729,
+            "timestamp": 1716562679483
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:57:56.972",
+        "current_location": {
+            "lat": 48.9985286,
+            "lon": 12.0967723,
+            "timestamp": 1716562675306
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:57:53.232",
+        "current_location": {
+            "lat": 48.998531,
+            "lon": 12.0966985,
+            "timestamp": 1716562671534
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:57:49.408",
+        "current_location": {
+            "lat": 48.9985118,
+            "lon": 12.0966113,
+            "timestamp": 1716562667759
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:57:45.652",
+        "current_location": {
+            "lat": 48.998504,
+            "lon": 12.0965018,
+            "timestamp": 1716562663827
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:57:41.494",
+        "current_location": {
+            "lat": 48.9984768,
+            "lon": 12.0963707,
+            "timestamp": 1716562659822
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:57:37.532",
+        "current_location": {
+            "lat": 48.9984461,
+            "lon": 12.0962017,
+            "timestamp": 1716562655805
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:57:33.512",
+        "current_location": {
+            "lat": 48.998566,
+            "lon": 12.0961992,
+            "timestamp": 1716562651781
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:57:29.714",
+        "current_location": {
+            "lat": 48.9985966,
+            "lon": 12.0961231,
+            "timestamp": 1716562648032
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:57:26.012",
+        "current_location": {
+            "lat": 48.9986007,
+            "lon": 12.0960759,
+            "timestamp": 1716562644337
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:57:21.892",
+        "current_location": {
+            "lat": 48.9985841,
+            "lon": 12.0959466,
+            "timestamp": 1716562640183
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:57:18.194",
+        "current_location": {
+            "lat": 48.9986184,
+            "lon": 12.0958049,
+            "timestamp": 1716562636519
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:57:14.534",
+        "current_location": {
+            "lat": 48.9986307,
+            "lon": 12.0956964,
+            "timestamp": 1716562632827
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:57:10.607",
+        "current_location": {
+            "lat": 48.9986111,
+            "lon": 12.0956151,
+            "timestamp": 1716562628813
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:55:42.635",
+        "current_location": {
+            "lat": 48.9984322,
+            "lon": 12.0942248,
+            "timestamp": 1716562540835
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:55:38.433",
+        "current_location": {
+            "lat": 48.9984731,
+            "lon": 12.0942102,
+            "timestamp": 1716562536833
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:55:34.552",
+        "current_location": {
+            "lat": 48.9985097,
+            "lon": 12.0941632,
+            "timestamp": 1716562532982
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:55:31.027",
+        "current_location": {
+            "lat": 48.9985787,
+            "lon": 12.0941167,
+            "timestamp": 1716562528803
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:55:26.012",
+        "current_location": {
+            "lat": 48.9986152,
+            "lon": 12.0941195,
+            "timestamp": 1716562524403
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:55:22.187",
+        "current_location": {
+            "lat": 48.9986659,
+            "lon": 12.0941294,
+            "timestamp": 1716562520645
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:55:18.352",
+        "current_location": {
+            "lat": 48.9987401,
+            "lon": 12.0941159,
+            "timestamp": 1716562516772
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:55:14.575",
+        "current_location": {
+            "lat": 48.9987721,
+            "lon": 12.0941311,
+            "timestamp": 1716562512814
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:55:10.787",
+        "current_location": {
+            "lat": 48.9988656,
+            "lon": 12.0941195,
+            "timestamp": 1716562509221
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:55:07.132",
+        "current_location": {
+            "lat": 48.9989949,
+            "lon": 12.0941243,
+            "timestamp": 1716562505481
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:55:03.375",
+        "current_location": {
+            "lat": 48.9990053,
+            "lon": 12.0941614,
+            "timestamp": 1716562501719
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:54:59.227",
+        "current_location": {
+            "lat": 48.9990474,
+            "lon": 12.0941002,
+            "timestamp": 1716562497651
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:54:55.555",
+        "current_location": {
+            "lat": 48.9990428,
+            "lon": 12.0940607,
+            "timestamp": 1716562493810
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:54:51.067",
+        "current_location": {
+            "lat": 48.9990257,
+            "lon": 12.0940043,
+            "timestamp": 1716562489467
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:54:46.995",
+        "current_location": {
+            "lat": 48.9989812,
+            "lon": 12.0939894,
+            "timestamp": 1716562485369
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:54:43.275",
+        "current_location": {
+            "lat": 48.9989349,
+            "lon": 12.0939787,
+            "timestamp": 1716562481630
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:54:39.387",
+        "current_location": {
+            "lat": 48.9988697,
+            "lon": 12.0939924,
+            "timestamp": 1716562477816
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:54:35.467",
+        "current_location": {
+            "lat": 48.9988148,
+            "lon": 12.0938551,
+            "timestamp": 1716562473807
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:54:30.367",
+        "current_location": {
+            "lat": 48.9987016,
+            "lon": 12.0932143,
+            "timestamp": 1716562468798
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:54:26.747",
+        "current_location": {
+            "lat": 48.9986931,
+            "lon": 12.0931901,
+            "timestamp": 1716562465189
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:52:58.587",
+        "current_location": {
+            "lat": 48.9990357,
+            "lon": 12.0942427,
+            "timestamp": 1716562376948
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:52:48.467",
+        "current_location": {
+            "lat": 48.9994442,
+            "lon": 12.0941279,
+            "timestamp": 1716562366840
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:52:32.692",
+        "current_location": {
+            "lat": 48.9998633,
+            "lon": 12.0941303,
+            "timestamp": 1716562350869
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:52:28.552",
+        "current_location": {
+            "lat": 48.9996026,
+            "lon": 12.0942059,
+            "timestamp": 1716562346874
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:52:03.075",
+        "current_location": {
+            "lat": 48.9995949,
+            "lon": 12.0940823,
+            "timestamp": 1716562321173
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:51:58.982",
+        "current_location": {
+            "lat": 48.9994442,
+            "lon": 12.0941354,
+            "timestamp": 1716562316995
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:51:40.422",
+        "current_location": {
+            "lat": 48.9989074,
+            "lon": 12.0942904,
+            "timestamp": 1716562298821
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:51:36.662",
+        "current_location": {
+            "lat": 48.998887,
+            "lon": 12.0942426,
+            "timestamp": 1716562294814
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:51:32.612",
+        "current_location": {
+            "lat": 48.9988603,
+            "lon": 12.0942013,
+            "timestamp": 1716562290798
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:51:28.002",
+        "current_location": {
+            "lat": 48.9988268,
+            "lon": 12.0941458,
+            "timestamp": 1716562285811
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:51:23.452",
+        "current_location": {
+            "lat": 48.9988133,
+            "lon": 12.0940889,
+            "timestamp": 1716562281800
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:51:19.812",
+        "current_location": {
+            "lat": 48.9987923,
+            "lon": 12.0940532,
+            "timestamp": 1716562277817
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:51:15.432",
+        "current_location": {
+            "lat": 48.9987748,
+            "lon": 12.0939871,
+            "timestamp": 1716562273813
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:51:11.781",
+        "current_location": {
+            "lat": 48.9987676,
+            "lon": 12.0939227,
+            "timestamp": 1716562269817
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:51:07.412",
+        "current_location": {
+            "lat": 48.9987605,
+            "lon": 12.0938546,
+            "timestamp": 1716562265806
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:51:03.515",
+        "current_location": {
+            "lat": 48.9987483,
+            "lon": 12.0937784,
+            "timestamp": 1716562261815
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:50:59.412",
+        "current_location": {
+            "lat": 48.9987232,
+            "lon": 12.0937138,
+            "timestamp": 1716562257820
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:50:55.501",
+        "current_location": {
+            "lat": 48.9986939,
+            "lon": 12.0936643,
+            "timestamp": 1716562253800
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:50:51.355",
+        "current_location": {
+            "lat": 48.9986459,
+            "lon": 12.0936644,
+            "timestamp": 1716562249801
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:50:47.501",
+        "current_location": {
+            "lat": 48.9986042,
+            "lon": 12.0937211,
+            "timestamp": 1716562245801
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:50:43.332",
+        "current_location": {
+            "lat": 48.9985503,
+            "lon": 12.0937382,
+            "timestamp": 1716562241799
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:50:39.521",
+        "current_location": {
+            "lat": 48.998542,
+            "lon": 12.0936594,
+            "timestamp": 1716562237809
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:50:35.381",
+        "current_location": {
+            "lat": 48.9986219,
+            "lon": 12.0935494,
+            "timestamp": 1716562233807
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:50:31.514",
+        "current_location": {
+            "lat": 48.9986498,
+            "lon": 12.0934262,
+            "timestamp": 1716562229806
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:50:27.395",
+        "current_location": {
+            "lat": 48.9986339,
+            "lon": 12.0933783,
+            "timestamp": 1716562225809
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:50:23.635",
+        "current_location": {
+            "lat": 48.9986558,
+            "lon": 12.0933461,
+            "timestamp": 1716562221813
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:49:49.392",
+        "current_location": {
+            "lat": 48.9988326,
+            "lon": 12.0931908,
+            "timestamp": 1716562187836
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#84AE9B"
+    },
+    {
+        "timestamp": "2024-05-24 14:34:09.373",
+        "current_location": {
+            "lat": 49.0040578,
+            "lon": 12.0952396,
+            "timestamp": 1716561247364
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:34:05.183",
+        "current_location": {
+            "lat": 49.0040688,
+            "lon": 12.0954463,
+            "timestamp": 1716561242730
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:34:00.363",
+        "current_location": {
+            "lat": 49.0040663,
+            "lon": 12.095612,
+            "timestamp": 1716561238827
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:33:56.390",
+        "current_location": {
+            "lat": 49.0040577,
+            "lon": 12.0957959,
+            "timestamp": 1716561234722
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:33:52.303",
+        "current_location": {
+            "lat": 49.0040321,
+            "lon": 12.09599,
+            "timestamp": 1716561230690
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:33:48.213",
+        "current_location": {
+            "lat": 49.0040933,
+            "lon": 12.096109,
+            "timestamp": 1716561226425
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:33:44.130",
+        "current_location": {
+            "lat": 49.0040896,
+            "lon": 12.0962067,
+            "timestamp": 1716561222626
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:33:40.451",
+        "current_location": {
+            "lat": 49.0040977,
+            "lon": 12.0962952,
+            "timestamp": 1716561218827
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:33:36.390",
+        "current_location": {
+            "lat": 49.0041056,
+            "lon": 12.0963747,
+            "timestamp": 1716561214816
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:33:32.470",
+        "current_location": {
+            "lat": 49.004114,
+            "lon": 12.0964823,
+            "timestamp": 1716561210840
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:33:20.882",
+        "current_location": {
+            "lat": 49.0036789,
+            "lon": 12.0968567,
+            "timestamp": 1716561199100
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:33:11.110",
+        "current_location": {
+            "lat": 49.003916,
+            "lon": 12.0969006,
+            "timestamp": 1716561187818
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:33:04.593",
+        "current_location": {
+            "lat": 49.0038597,
+            "lon": 12.0968931,
+            "timestamp": 1716561182484
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:59.833",
+        "current_location": {
+            "lat": 49.0037429,
+            "lon": 12.0968716,
+            "timestamp": 1716561177805
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:55.119",
+        "current_location": {
+            "lat": 49.0036569,
+            "lon": 12.0968497,
+            "timestamp": 1716561173452
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:51.433",
+        "current_location": {
+            "lat": 49.0035996,
+            "lon": 12.0968337,
+            "timestamp": 1716561169805
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:47.530",
+        "current_location": {
+            "lat": 49.0035262,
+            "lon": 12.0968225,
+            "timestamp": 1716561165803
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:43.433",
+        "current_location": {
+            "lat": 49.0034443,
+            "lon": 12.0968132,
+            "timestamp": 1716561161811
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:39.330",
+        "current_location": {
+            "lat": 49.003361,
+            "lon": 12.0968295,
+            "timestamp": 1716561157803
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:35.410",
+        "current_location": {
+            "lat": 49.0032742,
+            "lon": 12.096816,
+            "timestamp": 1716561153799
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:31.333",
+        "current_location": {
+            "lat": 49.0031905,
+            "lon": 12.0968024,
+            "timestamp": 1716561149812
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:27.590",
+        "current_location": {
+            "lat": 49.0031145,
+            "lon": 12.0967862,
+            "timestamp": 1716561145802
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:23.350",
+        "current_location": {
+            "lat": 49.003,
+            "lon": 12.0967848,
+            "timestamp": 1716561141813
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:19.553",
+        "current_location": {
+            "lat": 49.0028727,
+            "lon": 12.0967905,
+            "timestamp": 1716561137811
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:15.341",
+        "current_location": {
+            "lat": 49.0027396,
+            "lon": 12.0967712,
+            "timestamp": 1716561133808
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:11.561",
+        "current_location": {
+            "lat": 49.0025922,
+            "lon": 12.0967601,
+            "timestamp": 1716561129805
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:07.361",
+        "current_location": {
+            "lat": 49.0024393,
+            "lon": 12.0967191,
+            "timestamp": 1716561125802
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:32:03.681",
+        "current_location": {
+            "lat": 49.0022977,
+            "lon": 12.0967027,
+            "timestamp": 1716561121811
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:59.391",
+        "current_location": {
+            "lat": 49.0022472,
+            "lon": 12.0967322,
+            "timestamp": 1716561117818
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:55.361",
+        "current_location": {
+            "lat": 49.0022296,
+            "lon": 12.0967254,
+            "timestamp": 1716561113810
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:51.685",
+        "current_location": {
+            "lat": 49.0022295,
+            "lon": 12.0967249,
+            "timestamp": 1716561109812
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "RUNNING",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:47.531",
+        "current_location": {
+            "lat": 49.0022297,
+            "lon": 12.096724,
+            "timestamp": 1716561105803
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:43.541",
+        "current_location": {
+            "lat": 49.0022305,
+            "lon": 12.0967235,
+            "timestamp": 1716561101822
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:38.661",
+        "current_location": {
+            "lat": 49.0022301,
+            "lon": 12.0967234,
+            "timestamp": 1716561096832
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:34.531",
+        "current_location": {
+            "lat": 49.0022298,
+            "lon": 12.0967235,
+            "timestamp": 1716561092821
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:30.901",
+        "current_location": {
+            "lat": 49.0022297,
+            "lon": 12.0967237,
+            "timestamp": 1716561088811
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:26.532",
+        "current_location": {
+            "lat": 49.0022293,
+            "lon": 12.0967239,
+            "timestamp": 1716561084806
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:22.571",
+        "current_location": {
+            "lat": 49.0022257,
+            "lon": 12.0967223,
+            "timestamp": 1716561080812
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:18.520",
+        "current_location": {
+            "lat": 49.0022264,
+            "lon": 12.0967141,
+            "timestamp": 1716561076795
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:14.471",
+        "current_location": {
+            "lat": 49.0022257,
+            "lon": 12.096714,
+            "timestamp": 1716561071827
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:09.512",
+        "current_location": {
+            "lat": 49.0022251,
+            "lon": 12.0967141,
+            "timestamp": 1716561067804
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:05.691",
+        "current_location": {
+            "lat": 49.0022248,
+            "lon": 12.0967141,
+            "timestamp": 1716561063815
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:31:01.820",
+        "current_location": {
+            "lat": 49.0022272,
+            "lon": 12.0967151,
+            "timestamp": 1716561059808
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:30:57.691",
+        "current_location": {
+            "lat": 49.0022287,
+            "lon": 12.0967156,
+            "timestamp": 1716561055817
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:30:53.560",
+        "current_location": {
+            "lat": 49.0022311,
+            "lon": 12.0967138,
+            "timestamp": 1716561051819
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:30:49.611",
+        "current_location": {
+            "lat": 49.0022348,
+            "lon": 12.0967127,
+            "timestamp": 1716561047819
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:30:45.571",
+        "current_location": {
+            "lat": 49.0022333,
+            "lon": 12.0967103,
+            "timestamp": 1716561043819
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:30:41.700",
+        "current_location": {
+            "lat": 49.0022365,
+            "lon": 12.0967024,
+            "timestamp": 1716561039817
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:30:37.580",
+        "current_location": {
+            "lat": 49.00224,
+            "lon": 12.0967028,
+            "timestamp": 1716561035821
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:30:33.580",
+        "current_location": {
+            "lat": 49.00224,
+            "lon": 12.0967031,
+            "timestamp": 1716561031824
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:30:28.551",
+        "current_location": {
+            "lat": 49.0022397,
+            "lon": 12.0967031,
+            "timestamp": 1716561026800
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:30:24.571",
+        "current_location": {
+            "lat": 49.0022391,
+            "lon": 12.0967023,
+            "timestamp": 1716561022808
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:30:20.611",
+        "current_location": {
+            "lat": 49.0022405,
+            "lon": 12.096707,
+            "timestamp": 1716561018813
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:30:16.591",
+        "current_location": {
+            "lat": 49.0022431,
+            "lon": 12.0967081,
+            "timestamp": 1716561014813
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:30:12.699",
+        "current_location": {
+            "lat": 49.0022428,
+            "lon": 12.0967104,
+            "timestamp": 1716561010809
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:30:07.672",
+        "current_location": {
+            "lat": 49.002243,
+            "lon": 12.0967104,
+            "timestamp": 1716561005817
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:30:03.493",
+        "current_location": {
+            "lat": 49.0022431,
+            "lon": 12.0967103,
+            "timestamp": 1716561001819
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:58.611",
+        "current_location": {
+            "lat": 49.0022433,
+            "lon": 12.0967104,
+            "timestamp": 1716560996823
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:54.573",
+        "current_location": {
+            "lat": 49.0022434,
+            "lon": 12.0967102,
+            "timestamp": 1716560992820
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:50.878",
+        "current_location": {
+            "lat": 49.0022434,
+            "lon": 12.0967096,
+            "timestamp": 1716560988814
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:46.471",
+        "current_location": {
+            "lat": 49.0022432,
+            "lon": 12.0967072,
+            "timestamp": 1716560984799
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:42.658",
+        "current_location": {
+            "lat": 49.0022504,
+            "lon": 12.0967294,
+            "timestamp": 1716560980802
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:37.511",
+        "current_location": {
+            "lat": 49.0022579,
+            "lon": 12.0968159,
+            "timestamp": 1716560975808
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:33.612",
+        "current_location": {
+            "lat": 49.0022429,
+            "lon": 12.0968924,
+            "timestamp": 1716560971808
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:29.559",
+        "current_location": {
+            "lat": 49.0022366,
+            "lon": 12.0969766,
+            "timestamp": 1716560967810
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:25.571",
+        "current_location": {
+            "lat": 49.0022334,
+            "lon": 12.0970592,
+            "timestamp": 1716560963808
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:21.617",
+        "current_location": {
+            "lat": 49.0022365,
+            "lon": 12.0971444,
+            "timestamp": 1716560959806
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:17.377",
+        "current_location": {
+            "lat": 49.0022431,
+            "lon": 12.0972421,
+            "timestamp": 1716560955534
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:13.171",
+        "current_location": {
+            "lat": 49.0022094,
+            "lon": 12.0972904,
+            "timestamp": 1716560951277
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:08.852",
+        "current_location": {
+            "lat": 49.0022036,
+            "lon": 12.097207,
+            "timestamp": 1716560946807
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:04.551",
+        "current_location": {
+            "lat": 49.0021993,
+            "lon": 12.0971156,
+            "timestamp": 1716560942811
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:29:00.692",
+        "current_location": {
+            "lat": 49.0021963,
+            "lon": 12.0969947,
+            "timestamp": 1716560938346
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:28:54.893",
+        "current_location": {
+            "lat": 49.0022217,
+            "lon": 12.0967896,
+            "timestamp": 1716560932789
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:28:50.571",
+        "current_location": {
+            "lat": 49.0022246,
+            "lon": 12.0967526,
+            "timestamp": 1716560928819
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:28:46.593",
+        "current_location": {
+            "lat": 49.0022277,
+            "lon": 12.0967488,
+            "timestamp": 1716560924804
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:28:42.552",
+        "current_location": {
+            "lat": 49.0022274,
+            "lon": 12.096749,
+            "timestamp": 1716560920802
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:28:38.460",
+        "current_location": {
+            "lat": 49.0022215,
+            "lon": 12.0967531,
+            "timestamp": 1716560916805
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:28:34.591",
+        "current_location": {
+            "lat": 49.0022234,
+            "lon": 12.0967531,
+            "timestamp": 1716560912831
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:28:30.572",
+        "current_location": {
+            "lat": 49.0022233,
+            "lon": 12.0967496,
+            "timestamp": 1716560908806
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:28:26.511",
+        "current_location": {
+            "lat": 49.0022232,
+            "lon": 12.0967497,
+            "timestamp": 1716560904809
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:28:22.552",
+        "current_location": {
+            "lat": 49.0022231,
+            "lon": 12.0967497,
+            "timestamp": 1716560900828
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:28:18.611",
+        "current_location": {
+            "lat": 49.0022227,
+            "lon": 12.0967499,
+            "timestamp": 1716560896803
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:28:14.552",
+        "current_location": {
+            "lat": 49.0022221,
+            "lon": 12.0967503,
+            "timestamp": 1716560892832
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:28:10.552",
+        "current_location": {
+            "lat": 49.0022218,
+            "lon": 12.0967505,
+            "timestamp": 1716560888816
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:28:06.991",
+        "current_location": {
+            "lat": 49.0022262,
+            "lon": 12.0967441,
+            "timestamp": 1716560884807
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:28:02.532",
+        "current_location": {
+            "lat": 49.0022277,
+            "lon": 12.0967432,
+            "timestamp": 1716560880816
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:58.712",
+        "current_location": {
+            "lat": 49.0022248,
+            "lon": 12.0967449,
+            "timestamp": 1716560876820
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:54.572",
+        "current_location": {
+            "lat": 49.0022161,
+            "lon": 12.0967447,
+            "timestamp": 1716560872824
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:50.651",
+        "current_location": {
+            "lat": 49.0022193,
+            "lon": 12.0967412,
+            "timestamp": 1716560868830
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:46.712",
+        "current_location": {
+            "lat": 49.0022083,
+            "lon": 12.0967483,
+            "timestamp": 1716560864819
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:42.634",
+        "current_location": {
+            "lat": 49.0022188,
+            "lon": 12.0967409,
+            "timestamp": 1716560860829
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:38.792",
+        "current_location": {
+            "lat": 49.0022284,
+            "lon": 12.0967305,
+            "timestamp": 1716560856821
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:34.652",
+        "current_location": {
+            "lat": 49.0022268,
+            "lon": 12.0967323,
+            "timestamp": 1716560852832
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:30.612",
+        "current_location": {
+            "lat": 49.0022264,
+            "lon": 12.0967348,
+            "timestamp": 1716560848842
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:26.634",
+        "current_location": {
+            "lat": 49.0022302,
+            "lon": 12.0967375,
+            "timestamp": 1716560844810
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:22.652",
+        "current_location": {
+            "lat": 49.0022371,
+            "lon": 12.0967204,
+            "timestamp": 1716560840819
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:18.132",
+        "current_location": {
+            "lat": 49.0022348,
+            "lon": 12.0967168,
+            "timestamp": 1716560835802
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:13.592",
+        "current_location": {
+            "lat": 49.0022349,
+            "lon": 12.0967166,
+            "timestamp": 1716560831827
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:09.492",
+        "current_location": {
+            "lat": 49.002235,
+            "lon": 12.0967164,
+            "timestamp": 1716560827808
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:05.651",
+        "current_location": {
+            "lat": 49.0022349,
+            "lon": 12.0967163,
+            "timestamp": 1716560823815
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:27:01.572",
+        "current_location": {
+            "lat": 49.002235,
+            "lon": 12.0967162,
+            "timestamp": 1716560819825
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:26:57.593",
+        "current_location": {
+            "lat": 49.002235,
+            "lon": 12.096716,
+            "timestamp": 1716560815803
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:26:53.672",
+        "current_location": {
+            "lat": 49.0022353,
+            "lon": 12.0967158,
+            "timestamp": 1716560811828
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:26:49.512",
+        "current_location": {
+            "lat": 49.0022359,
+            "lon": 12.0967121,
+            "timestamp": 1716560807816
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:26:45.592",
+        "current_location": {
+            "lat": 49.0022374,
+            "lon": 12.0967108,
+            "timestamp": 1716560803811
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:20:05.731",
+        "current_location": {
+            "lat": 49.0022485,
+            "lon": 12.1005384,
+            "timestamp": 1716560402764
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:20:00.272",
+        "current_location": {
+            "lat": 49.0022256,
+            "lon": 12.1005581,
+            "timestamp": 1716560398497
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:19:56.073",
+        "current_location": {
+            "lat": 49.0022232,
+            "lon": 12.1005532,
+            "timestamp": 1716560394261
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:19:46.113",
+        "current_location": {
+            "lat": 49.0022136,
+            "lon": 12.1005809,
+            "timestamp": 1716560384255
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:19:36.075",
+        "current_location": {
+            "lat": 49.0022222,
+            "lon": 12.1005734,
+            "timestamp": 1716560374273
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:19:26.035",
+        "current_location": {
+            "lat": 49.0022106,
+            "lon": 12.100574,
+            "timestamp": 1716560364273
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:19:16.113",
+        "current_location": {
+            "lat": 49.0022117,
+            "lon": 12.1005686,
+            "timestamp": 1716560354255
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:19:05.911",
+        "current_location": {
+            "lat": 49.0022092,
+            "lon": 12.1005725,
+            "timestamp": 1716560344108
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:18:55.993",
+        "current_location": {
+            "lat": 49.002215,
+            "lon": 12.1005545,
+            "timestamp": 1716560334249
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:18:46.034",
+        "current_location": {
+            "lat": 49.0022129,
+            "lon": 12.1005631,
+            "timestamp": 1716560324262
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:18:36.014",
+        "current_location": {
+            "lat": 49.0022181,
+            "lon": 12.1005796,
+            "timestamp": 1716560314254
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:18:26.193",
+        "current_location": {
+            "lat": 49.0022033,
+            "lon": 12.100606,
+            "timestamp": 1716560304378
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:18:15.994",
+        "current_location": {
+            "lat": 49.0022177,
+            "lon": 12.1005453,
+            "timestamp": 1716560294144
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:18:06.031",
+        "current_location": {
+            "lat": 49.0022135,
+            "lon": 12.1005643,
+            "timestamp": 1716560284285
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:17:56.014",
+        "current_location": {
+            "lat": 49.0022054,
+            "lon": 12.1005967,
+            "timestamp": 1716560274223
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:17:45.891",
+        "current_location": {
+            "lat": 49.0022083,
+            "lon": 12.100585,
+            "timestamp": 1716560264070
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:17:35.754",
+        "current_location": {
+            "lat": 49.0022116,
+            "lon": 12.1005728,
+            "timestamp": 1716560253935
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:17:25.831",
+        "current_location": {
+            "lat": 49.0022109,
+            "lon": 12.1005688,
+            "timestamp": 1716560244044
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:17:15.691",
+        "current_location": {
+            "lat": 49.0022082,
+            "lon": 12.1005884,
+            "timestamp": 1716560233973
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:17:05.751",
+        "current_location": {
+            "lat": 49.0022118,
+            "lon": 12.1005723,
+            "timestamp": 1716560223995
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:16:55.531",
+        "current_location": {
+            "lat": 49.0022137,
+            "lon": 12.1005644,
+            "timestamp": 1716560213810
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:16:45.814",
+        "current_location": {
+            "lat": 49.0022142,
+            "lon": 12.1005677,
+            "timestamp": 1716560204043
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:16:35.691",
+        "current_location": {
+            "lat": 49.0022091,
+            "lon": 12.1005989,
+            "timestamp": 1716560193904
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:16:25.654",
+        "current_location": {
+            "lat": 49.0022128,
+            "lon": 12.1005668,
+            "timestamp": 1716560183851
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:16:15.515",
+        "current_location": {
+            "lat": 49.0022093,
+            "lon": 12.1005734,
+            "timestamp": 1716560173750
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:16:05.434",
+        "current_location": {
+            "lat": 49.0022026,
+            "lon": 12.1006061,
+            "timestamp": 1716560163644
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:15:55.476",
+        "current_location": {
+            "lat": 49.0022129,
+            "lon": 12.1005697,
+            "timestamp": 1716560153721
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:15:45.551",
+        "current_location": {
+            "lat": 49.0022008,
+            "lon": 12.1006143,
+            "timestamp": 1716560143779
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:15:35.331",
+        "current_location": {
+            "lat": 49.0022135,
+            "lon": 12.1005643,
+            "timestamp": 1716560133561
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:15:25.492",
+        "current_location": {
+            "lat": 49.0022122,
+            "lon": 12.1005693,
+            "timestamp": 1716560123730
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:15:15.472",
+        "current_location": {
+            "lat": 49.002211,
+            "lon": 12.1005751,
+            "timestamp": 1716560113699
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:15:05.334",
+        "current_location": {
+            "lat": 49.0021989,
+            "lon": 12.1006173,
+            "timestamp": 1716560103598
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:14:55.434",
+        "current_location": {
+            "lat": 49.002208,
+            "lon": 12.1005865,
+            "timestamp": 1716560093610
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:14:45.517",
+        "current_location": {
+            "lat": 49.0022079,
+            "lon": 12.100579,
+            "timestamp": 1716560083709
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:14:35.370",
+        "current_location": {
+            "lat": 49.0022065,
+            "lon": 12.1005911,
+            "timestamp": 1716560073628
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:14:25.232",
+        "current_location": {
+            "lat": 49.0022054,
+            "lon": 12.1005939,
+            "timestamp": 1716560063477
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:14:15.312",
+        "current_location": {
+            "lat": 49.0022047,
+            "lon": 12.1005985,
+            "timestamp": 1716560053531
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:14:05.192",
+        "current_location": {
+            "lat": 49.0022008,
+            "lon": 12.1006171,
+            "timestamp": 1716560043499
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    },
+    {
+        "timestamp": "2024-05-24 14:13:55.274",
+        "current_location": {
+            "lat": 49.0021997,
+            "lon": 12.1006154,
+            "timestamp": 1716560033431
+        },
+        "active_user": "2a539389-19d7-11ef-afee-e50b875d9764",
+        "game_state": "TEAM_CREATION_PHASE",
+        "team_role": "RUNAWAYS",
+        "team_color": "#000000"
+    }
+]
