@@ -192,7 +192,7 @@ const downloadBlob = (blob, filename) => {
 }
 
 const run = async (directory) => {
-    document.querySelector("#title").innerHTML = directory;
+    document.querySelector("#title").innerHTML = `<strong>${directory}</strong> <small>(press "c" to change)</small>`;
     const [statusUpdate, teamCaught, teamNames, interestingTimestamps] = await loadJson(directory);
 
     const locations = parseStatusUpdate(statusUpdate)
@@ -413,7 +413,7 @@ const run = async (directory) => {
             }
             redraw();
         }
-        playButton.innerHTML = paused ? "Play" : "Pause";
+        playButton.innerHTML = paused ? "⏵" : "⏸";
         previousTimeStamp = timeStamp;
         requestAnimationFrame(frame)
     }
@@ -449,6 +449,12 @@ const run = async (directory) => {
         }
     }
 
+    const recordKeyHandle = async evt => {
+        if (evt.key === "r") {
+            recordButtonHandle();
+        }
+    }
+
     const speeds = [30, 60, 120, 240];
     const speedButton = document.querySelector("#speed");
     const updateSpeedButton = () => {
@@ -476,6 +482,7 @@ const run = async (directory) => {
     window.addEventListener("keydown", keyHandler)
     timeSlider.addEventListener("input", sliderHandler);
     recordButton.addEventListener("click", recordButtonHandle);
+    window.addEventListener("keydown", recordKeyHandle);
     slowMoButton.addEventListener("click", slowMoButtonHandler);
     speedButton.addEventListener("click", speedButtonHandler);
 
@@ -485,6 +492,7 @@ const run = async (directory) => {
         window.removeEventListener("keydown", keyHandler)
         timeSlider.removeEventListener("input", sliderHandler);
         recordButton.removeEventListener("click", recordButtonHandle);
+        window.removeEventListener("keydown", recordKeyHandle);
         slowMoButton.removeEventListener("click", slowMoButtonHandler)
         speedButton.removeEventListener("click", speedButtonHandler);
         map.off(mapClickHander);
@@ -523,7 +531,7 @@ const main = async () => {
     }
 
     window.addEventListener("keydown", async evt => {
-        if (evt.key === "r") {
+        if (evt.key === "c") {
             await switchGame();
         }
     });
