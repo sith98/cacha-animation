@@ -369,7 +369,9 @@ const run = async (directory) => {
     }
 
     const log = document.querySelector("#log")
+    const timeOverlay = document.querySelector("#timeOutput")
     const redraw = () => {
+        timeOverlay.innerHTML = new Date(time).toLocaleTimeString();
         log.innerHTML = time;
         for (const [userId, marker] of Object.entries(markers)) {
             updateMarker(marker, userId, time, false);
