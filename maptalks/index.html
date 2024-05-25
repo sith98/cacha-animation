@@ -13,7 +13,12 @@
         flex-direction: column;
     }
 
-    .container {
+    .container.hd {
+        width: 1920px;
+        height: 1080px;
+    }
+
+    .container:not(.hd) {
         width: 100%;
         flex: 1;
     }

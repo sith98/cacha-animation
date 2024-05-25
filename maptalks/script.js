@@ -495,19 +495,9 @@ const run = async (directory) => {
 
 
 const main = async () => {
-    let hdMode = false;
-
     document.querySelector("#mode").addEventListener("click", evt => {
-        hdMode = !hdMode
-        if (hdMode) {
-            const mapContainer = document.querySelector("#map");
-            mapContainer.style.width = "1920px";
-            mapContainer.style.height = "1080px";
-        } else {
-            mapContainer.style.width = "100%";
-            mapContainer.style.height = "90%";
-        }
-
+        const mapContainer = document.querySelector("#map");
+        mapContainer.classList.toggle("hd")
     })
     const res = await fetch("games.json");
     const games = await res.json();
