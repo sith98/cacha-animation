@@ -328,10 +328,10 @@ const run = async (directory) => {
         marker.updateSymbol([{ markerFill: color }, {}]);
     }
 
-    const pingMarkerSize = markerSize * 3;
-    const pingMarkerTime = 1000;
-    const scaledPingMarkerTime = pingMarkerTime * speedFactor;
+    const pingMarkerSize = markerSize * 5;
+    const pingMarkerTime = 1500;
     const updatePingMarker = (marker, userId, time) => {
+        const scaledPingMarkerTime = pingMarkerTime * speedFactor;
         const ping = pings.find(ping => ping.time <= time && time <= ping.time + scaledPingMarkerTime);
         if (ping === undefined || !(userId in ping.locations)) {
             marker.hide();
@@ -340,7 +340,7 @@ const run = async (directory) => {
         marker.show();
         const factor = (time - ping.time) / scaledPingMarkerTime;
         const size = markerSize * (1 - factor) + pingMarkerSize * factor;
-        marker.updateSymbol([{ markerFillOpacity: 1 - factor, markerWidth: size, markerHeight: size }, {}]);
+        marker.updateSymbol([{ markerFillOpacity: 0.75 * (1 - factor), markerWidth: size, markerHeight: size }, {}]);
         const location = ping.locations[userId];
         marker.setCoordinates(new maptalks.Coordinate(location.lon, location.lat))
     }

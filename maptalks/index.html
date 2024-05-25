@@ -8,24 +8,38 @@
     body {
         margin: 0px;
         height: 100%;
-        width: 100%
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .container {
         width: 100%;
-        height: 90%;
-    }
-
-    input[type=range] {
-        width: 90%;
+        flex: 1;
     }
 
     .controls {
+        padding: 5px;
         display: flex;
+        font-size: 1.2em;
     }
 
     .controls input[type=range] {
         flex: 1;
+    }
+
+    .controls button {
+        margin-right: 5px;
+        font-size: 1.0em;
+    }
+
+    #title {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background: rgba(255, 255, 255, 128);
+        padding: 5px;
+        border-radius: 5px;
     }
 </style>
 <link rel="stylesheet" href="https://unpkg.com/maptalks/dist/maptalks.css">
@@ -43,7 +57,7 @@
         <button id="slowmo">Slow-Mo on</button>
     </div>
     <div id="title"></div>
-    <div id="log"></div>
+    <div id="log" style="display: none;"></div>
     <script src="script.js"></script>
 </body>
 
