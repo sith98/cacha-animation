@@ -19,3 +19,5 @@ pip3 install -r requirements.txt
 * The actual locations, that the hunters get sent every 5 minutes, should be logged by the server.
 ![Prey Pings](assets/prey_pings.png)
 In this case, the hunter got the actual location of the prey in the plot, but in the visualization, it was in the very last part of interpolation, which is why we pinged a older point.
+
+* Maybe a higher rate for the GPS data is useful to calculate totally run distance and especially speeds more precicely
