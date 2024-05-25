@@ -11,7 +11,7 @@ pip3 install -r requirements.txt
 ## Maptalks
 
 * Start as webserver: `python -m http.server 8000`
-* [GitHub Deployment](https://sith98.github.io/cacha-animation)
+* [GitHub Pages Deployment](https://sith98.github.io/cacha-animation)
 
 ## Log Requests for CaCha App
 
