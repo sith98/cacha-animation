@@ -32,10 +32,15 @@ def main(time_step_ms, inactive_after_ms):
             while json_data[current_json_index+1]["current_location"]["timestamp"] < time_equi[0]:
                 next_json_entry = copy.deepcopy(json_data[current_json_index])
                 next_json_entry["is_connection_active"] = True
+                next_json_entry["is_interpolated"] = False
                 result_json.append(next_json_entry)
                 current_json_index += 1
             for t in time_equi:
                 while json_data[current_json_index+1]["current_location"]["timestamp"] < t:
+                    next_json_entry = copy.deepcopy(json_data[current_json_index])
+                    next_json_entry["is_connection_active"] = True
+                    next_json_entry["is_interpolated"] = False
+                    result_json.append(next_json_entry)
                     current_json_index += 1
                 assert json_data[current_json_index]["current_location"]["timestamp"] <= t
                 next_json_entry = copy.deepcopy(json_data[current_json_index])
@@ -43,10 +48,12 @@ def main(time_step_ms, inactive_after_ms):
                 next_json_entry["current_location"]["lat"] = interpol_dataframe[team_name, "lat"][t]
                 next_json_entry["current_location"]["lon"] = interpol_dataframe[team_name, "lon"][t]
                 next_json_entry["is_connection_active"] = bool(connection_dataframe[team_name][t])
+                next_json_entry["is_interpolated"] = True
                 result_json.append(next_json_entry)
             while current_json_index+1 < len(json_data):
                 next_json_entry = copy.deepcopy(json_data[current_json_index])
                 next_json_entry["is_connection_active"] = True
+                next_json_entry["is_interpolated"] = False
                 result_json.append(next_json_entry)
                 current_json_index += 1
         with open(f"data/{game_name}/log-interpol/interpol.json", "w") as file:
