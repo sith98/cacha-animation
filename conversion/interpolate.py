@@ -6,6 +6,7 @@ import seaborn as sns
 import os
 import json
 import copy
+import csv
 from pathlib import Path
 
 sns.set_theme()
@@ -25,6 +26,18 @@ def main(time_step_ms, inactive_after_ms, average_speed_inteval_ms):
         connection_dataframe.to_parquet(f"data/{game_name}/log-interpol/connection.parquet")
         cumulative_distance = make_cumulative_distance(interpol_dataframe, teams)
         average_speed = make_average_speed(cumulative_distance, average_speed_inteval_ms // time_step_ms)
+        # plot distances
+        uuid_to_display_name = dict()
+        with open(f"data/{game_name}/teams.csv") as file:
+            reader = csv.reader(file)
+            it = iter(reader)
+            header = next(it)
+            index_active_user = list(header).index("active_user")
+            index_name = list(header).index("name")
+            for row in it:
+                uuid_to_display_name[row[index_active_user]] = row[index_name]
+        plot_distance(cumulative_distance, uuid_to_display_name, game_name)
+        plot_speed(average_speed, uuid_to_display_name, game_name)
         # Write back to json
         result_json = []
         for team_json in os.listdir(f"data/{game_name}/log-by-user/"):
@@ -171,6 +184,38 @@ def make_average_speed(cumulative_distance, num_points):
     #sns.relplot(data=df, kind="line")
     #plt.show()
     return df
+
+def plot_distance(cumulative_distance, uuid_to_display_name, game_name):
+    df = cumulative_distance.copy(deep=True)
+    df.index = pd.to_datetime(df.index, unit="ms")
+    df.columns = [uuid_to_display_name[uuid] for uuid in df.columns]
+    rp = sns.relplot(data=df, kind="line", height=8, aspect=1)
+    rp.fig.subplots_adjust(top=0.9)
+    rp.fig.suptitle(f"Distance: {game_name}")
+    plt.xlabel("Time")
+    plt.ylabel("Distance in meters")
+    ticks, labels = plt.xticks()
+    for entry in labels:
+        entry.set_text(entry.get_text()[3:])
+    plt.xticks(ticks=ticks, labels=labels)
+    plt.savefig(f"data/{game_name}/log-interpol/distance.png", dpi=96*2)
+    #plt.show()
+
+def plot_speed(average_speed, uuid_to_display_name, game_name):
+    df = average_speed.copy(deep=True)
+    df.index = pd.to_datetime(df.index, unit="ms")
+    df.columns = [uuid_to_display_name[uuid] for uuid in df.columns]
+    rp = sns.relplot(data=df, kind="line", height=8, aspect=1)
+    rp.fig.subplots_adjust(top=0.9)
+    rp.fig.suptitle(f"Speed: {game_name}")
+    plt.xlabel("Time")
+    plt.ylabel("Speed in meters per second")
+    ticks, labels = plt.xticks()
+    for entry in labels:
+        entry.set_text(entry.get_text()[3:])
+    plt.xticks(ticks=ticks, labels=labels)
+    plt.savefig(f"data/{game_name}/log-interpol/speed.png", dpi=96*2)
+    #plt.show()
 
 if __name__ == "__main__":
     main(time_step_ms=5_000, inactive_after_ms=30_000, average_speed_inteval_ms=60_000)
