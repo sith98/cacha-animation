@@ -11,3 +11,4 @@ kaleido
 scipy
 pyarrow
 tqdm
+seaborn
