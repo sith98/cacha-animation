@@ -1,5 +1,5 @@
 const loadJson = (dir) => {
-    return Promise.all(["regular_status_update", "team_caught", "team_names", "interesting_timestamps"].map(url => `${dir}/${url}.json`).map(url => {
+    return Promise.all(["interpol", "team_caught", "team_names", "interesting_timestamps"].map(url => `${dir}/${url}.json`).map(url => {
         return fetch(url).then(res => res.json());
     }))
 }
@@ -16,6 +16,8 @@ const parseStatusUpdate = json => {
             lon: entry.current_location.lon,
             time: entry.current_location.timestamp,
             gameState: entry.game_state,
+            isConnectionActive: entry.is_connection_active ?? true,
+            isInterpolated: entry.is_interpolated,
         })
     }
     for (const array of Object.values(byUser)) {
@@ -45,6 +47,7 @@ const getLocationByTime = (locations, time) => {
             lat: first.lat + factor * (second.lat - first.lat),
             lon: first.lon + factor * (second.lon - first.lon),
             gameState: first.gameState,
+            isConnectionActive: first.isConnectionActive,
         }
     }
     return entry;
@@ -125,10 +128,12 @@ const getPings = (locations, meta, catchTimes) => {
     const pings = []
     for (const ping of pingTimes) {
         const pingLocations = {}
+        console.log(locations);
         for (const [user, userLocations] of Object.entries(locations)) {
-            for (const [index, entry] of userLocations.entries()) {
+            const filteredUserLocations = userLocations.filter(l => !l.isInterpolated);
+            for (const [index, entry] of filteredUserLocations.entries()) {
                 if (entry.time > ping) {
-                    const location = userLocations[index - 1];
+                    const location = filteredUserLocations[index - 1];
                     if (!(user in catchTimes && entry.time >= catchTimes[user])) {
                         pingLocations[user] = location
                     }
@@ -315,17 +320,35 @@ const run = async (directory) => {
         }
     }
 
-    const updateMarker = (marker, userId, time) => {
+    const updateMarker = (marker, userId, time, tailMarker) => {
         const location = getLocationByTime(locations[userId], time);
         marker.setCoordinates(new maptalks.Coordinate(location.lon, location.lat));
         const isChaser = userId in catchTimes && time >= catchTimes[userId];
-        const isGrey = location.gameState === "TEAM_CREATION_PHASE" && !isChaser || location.gameState === "OVER" && isChaser;
+        const isGrey =
+            location.gameState === "TEAM_CREATION_PHASE" && !isChaser ||
+            location.gameState === "OVER" && isChaser;
         // const symbol = isGrey ? symbolGrey :
         //     isChaser ? symbolChaser : symbolRunner;
         // marker.setSymbol(symbol);
         const color = isGrey ? colorGrey :
             isChaser ? colorChaser : colorRunner
-        marker.updateSymbol([{ markerFill: color }, {}]);
+
+        if (tailMarker) {
+            marker.updateSymbol([{ markerFill: color }, {}])
+            if (location.isConnectionActive) {
+                marker.show();
+            } else {
+                marker.hide();
+            }
+        } else {
+            marker.updateSymbol([
+                {
+                    markerFill: color,
+                    markerFillOpacity: location.isConnectionActive ? 1 : 0.3
+                },
+                {}
+            ]);
+        }
     }
 
     const pingMarkerSize = markerSize * 5;
@@ -339,7 +362,7 @@ const run = async (directory) => {
         }
         marker.show();
         const factor = (time - ping.time) / scaledPingMarkerTime;
-        const size = markerSize * (1 - factor) + pingMarkerSize * factor;
+        const size = markerSize * 0.25 * (1 - factor) + pingMarkerSize * factor;
         marker.updateSymbol([{ markerFillOpacity: 0.75 * (1 - factor), markerWidth: size, markerHeight: size }, {}]);
         const location = ping.locations[userId];
         marker.setCoordinates(new maptalks.Coordinate(location.lon, location.lat))
@@ -349,11 +372,11 @@ const run = async (directory) => {
     const redraw = () => {
         log.innerHTML = time;
         for (const [userId, marker] of Object.entries(markers)) {
-            updateMarker(marker, userId, time)
+            updateMarker(marker, userId, time, false);
             updatePingMarker(pingMarkers[userId], userId, time)
             const roundedTime = Math.floor(time / tailStepSize) * tailStepSize;
             for (const [index, tailMarker] of tailMarkers[userId].entries()) {
-                updateMarker(tailMarker, userId, roundedTime - tailStepSize * index);
+                updateMarker(tailMarker, userId, roundedTime - tailStepSize * index, true);
             }
         }
         const slowMo = interestingTimestamps.some(range =>
@@ -426,7 +449,7 @@ const run = async (directory) => {
         }
     }
 
-    const speeds = [60, 120, 240];
+    const speeds = [30, 60, 120, 240];
     const speedButton = document.querySelector("#speed");
     const updateSpeedButton = () => {
         speedButton.innerHTML = `Speed x${speedFactor}`;
