@@ -10,7 +10,7 @@ from pathlib import Path
 
 sns.set_theme()
 
-def main(time_step_ms, inactive_after_ms):
+def main(time_step_ms, inactive_after_ms, average_speed_inteval_ms):
     for game_name in os.listdir("data/"):
         teams = dict()
         for team_json in os.listdir(f"data/{game_name}/log-by-user/"):
@@ -24,6 +24,7 @@ def main(time_step_ms, inactive_after_ms):
         connection_dataframe = connection_status(time_equi, teams, inactive_after_ms)
         connection_dataframe.to_parquet(f"data/{game_name}/log-interpol/connection.parquet")
         cumulative_distance = make_cumulative_distance(interpol_dataframe, teams)
+        average_speed = make_average_speed(cumulative_distance, average_speed_inteval_ms // time_step_ms)
         # Write back to json
         result_json = []
         for team_json in os.listdir(f"data/{game_name}/log-by-user/"):
@@ -38,6 +39,7 @@ def main(time_step_ms, inactive_after_ms):
                 next_json_entry["is_connection_active"] = True
                 next_json_entry["is_interpolated"] = False
                 next_json_entry["cumulative_distance"] = 0.0
+                next_json_entry["average_speed"] = 0.0
                 result_json.append(next_json_entry)
                 current_json_index += 1
             for t in time_equi:
@@ -46,6 +48,7 @@ def main(time_step_ms, inactive_after_ms):
                     next_json_entry["is_connection_active"] = True
                     next_json_entry["is_interpolated"] = False
                     next_json_entry["cumulative_distance"] = float(result_json[-1]["cumulative_distance"])
+                    next_json_entry["average_speed"] = float(result_json[-1]["average_speed"])
                     result_json.append(next_json_entry)
                     current_json_index += 1
                 assert json_data[current_json_index]["current_location"]["timestamp"] <= t
@@ -56,12 +59,14 @@ def main(time_step_ms, inactive_after_ms):
                 next_json_entry["is_connection_active"] = bool(connection_dataframe[team_name][t])
                 next_json_entry["is_interpolated"] = True
                 next_json_entry["cumulative_distance"] = float(cumulative_distance[team_name][t])
+                next_json_entry["average_speed"] = float(average_speed[team_name][t])
                 result_json.append(next_json_entry)
             while current_json_index+1 < len(json_data):
                 next_json_entry = copy.deepcopy(json_data[current_json_index])
                 next_json_entry["is_connection_active"] = True
                 next_json_entry["is_interpolated"] = False
                 next_json_entry["cumulative_distance"] = float(result_json[-1]["cumulative_distance"])
+                next_json_entry["average_speed"] = 0.0
                 result_json.append(next_json_entry)
                 current_json_index += 1
         with open(f"data/{game_name}/log-interpol/interpol.json", "w") as file:
@@ -147,6 +152,26 @@ def make_cumulative_distance(interpol_dataframe, teams):
     #print(df.head())
     return df
 
+def make_average_speed(cumulative_distance, num_points):
+    df = pd.DataFrame(index=cumulative_distance.index, columns=cumulative_distance.columns)
+    kernel = np.arange(num_points)
+    kernel = kernel / np.sum(kernel)
+    time_step_ms = df.index[1] - df.index[0]
+    #print(time_step_ms)
+    #print(kernel)
+    for team_name in df.columns:
+        cum_distance = cumulative_distance[team_name].to_numpy()
+        distance = np.zeros_like(cum_distance)
+        distance[1:] = cum_distance[1:] - cum_distance[:-1]
+        speed_meter_per_second = distance / (time_step_ms / 1000)
+        #plt.plot(speed_meter_per_second)
+        average_speed_meter_per_second = np.convolve(distance, kernel, mode="same")
+        #plt.plot(average_speed_meter_per_second)
+        df[team_name] = average_speed_meter_per_second
+    #sns.relplot(data=df, kind="line")
+    #plt.show()
+    return df
 
 if __name__ == "__main__":
-    main(time_step_ms=5000, inactive_after_ms=30_000)
+    main(time_step_ms=5_000, inactive_after_ms=30_000, average_speed_inteval_ms=60_000)
+
