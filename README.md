@@ -8,6 +8,13 @@ source .venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
+## Rebuild interpolated data
+
+```bash
+python3 conversion/split_teams.py
+python3 conversion/interpolate.py
+```
+
 ## Maptalks
 
 * Start as webserver: `python -m http.server 8000`
@@ -21,4 +28,4 @@ pip3 install -r requirements.txt
 ![Prey Pings](assets/prey_pings.png)
 In this case, the hunter got the actual location of the prey in the plot, but in the visualization, it was in the very last part of interpolation, which is why we pinged a older point.
 
-* Maybe a higher rate for the GPS data is useful to calculate totally run distance and especially speeds more precicely
+* Maybe a higher rate for the GPS data is useful to calculate totally run distance and especially speeds more precisely
